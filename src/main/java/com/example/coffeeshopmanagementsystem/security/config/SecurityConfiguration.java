@@ -1,4 +1,4 @@
-package com.example.coffeeshopmanagementsystem.config;
+package com.example.coffeeshopmanagementsystem.security.config;
 
 import com.example.coffeeshopmanagementsystem.security.JwtTokenFilter;
 import com.example.coffeeshopmanagementsystem.security.repository.UserRepository;

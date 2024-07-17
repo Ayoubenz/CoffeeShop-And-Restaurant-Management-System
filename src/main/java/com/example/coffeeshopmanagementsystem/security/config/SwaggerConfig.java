@@ -1,4 +1,4 @@
-package com.example.coffeeshopmanagementsystem.config;
+package com.example.coffeeshopmanagementsystem.security.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

@@ -8,6 +8,7 @@ import com.example.coffeeshopmanagementsystem.security.repository.UserRepository
 import com.example.coffeeshopmanagementsystem.security.service.facade.UserService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
@@ -27,6 +29,7 @@ public class UserServiceImpl implements UserService {
         User foundUser = userRepository
                 .findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Can't find a user with the given Id"));
+        log.info("The id of the user is {}", id);
         return userMapper.toGetDto(foundUser);
     }
 
