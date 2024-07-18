@@ -84,7 +84,9 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
+    @Transactional
     public void deleteCustomer(Long id) {
-
+        GetCustomerDto customerDto = getCustomerById(id);
+        customerRepository.deleteById(id);
     }
 }
