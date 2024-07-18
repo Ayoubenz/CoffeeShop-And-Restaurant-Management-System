@@ -21,7 +21,7 @@ public class DataInitializer implements CommandLineRunner {
     private final PasswordEncoder passwordEncoder;
 
     @Override
-    @Transactional // Ensure the method is transactional to maintain persistence context
+    @Transactional
     public void run(String... args) throws Exception {
         Role adminRole;
 
@@ -34,6 +34,17 @@ public class DataInitializer implements CommandLineRunner {
             adminRole = new Role();
             adminRole.setName("ROLE_ADMIN");
             adminRole = roleRepository.save(adminRole); // Persist and re-assign to catch any managed version
+        }
+
+        if(roleRepository.findByName("ROLE_CUSTOMER").isEmpty()){
+            Role customerRole = new Role();
+            customerRole.setName("ROLE_CUSTOMER");
+            roleRepository.save(customerRole);
+        }
+        if(roleRepository.findByName("ROLE_EMPLOYEE").isEmpty()){
+            Role customerRole = new Role();
+            customerRole.setName("ROLE_EMPLOYEE");
+            roleRepository.save(customerRole);
         }
 
         // Check if an admin user exists

@@ -6,6 +6,8 @@ import com.example.coffeeshopmanagementsystem.dto.GetCustomerDto;
 import com.example.coffeeshopmanagementsystem.entity.Customer;
 import com.example.coffeeshopmanagementsystem.mapper.CustomerMapper;
 import com.example.coffeeshopmanagementsystem.repository.CustomerRepository;
+import com.example.coffeeshopmanagementsystem.security.entity.Role;
+import com.example.coffeeshopmanagementsystem.security.repository.RoleRepository;
 import com.example.coffeeshopmanagementsystem.service.facade.CustomerService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +16,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -23,6 +27,7 @@ public class CustomerServiceImpl implements CustomerService {
     private final CustomerRepository customerRepository;
     private final CustomerMapper customerMapper;
     private final PasswordEncoder passwordEncoder;
+    private final RoleRepository roleRepository;
     @Override
     public GetCustomerDto getCustomerById(Long id) {
         return customerRepository.findById(id)
@@ -44,13 +49,21 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     @Transactional
-    public CreateCustomerDto createCustomer(CreateCustomerDto customerDTO) {
+    public GetCustomerDto createCustomer(CreateCustomerDto customerDTO) {
         try{
             String encryptedPassword = passwordEncoder.encode(customerDTO.getPassword());
             Customer customer = customerMapper.toCreateEntity(customerDTO);
             customer.setPassword(encryptedPassword);
+
+            //Assigning the Customer Role by default
+            Role customerRole = roleRepository.findByName("ROLE_CUSTOMER")
+                    .orElseThrow(() -> new RuntimeException("Role not found"));
+            Set<Role> roles = new HashSet<>();
+            roles.add(customerRole);
+            customer.setRoles(roles);
+
             Customer savedCustomer = customerRepository.save(customer);
-            return customerMapper.toCreateDto(savedCustomer);
+            return customerMapper.toGetDto(savedCustomer);
         } catch (DataIntegrityViolationException e) {
             // Handle specific exceptions (e.g., if a unique constraint is violated)
             throw new IllegalArgumentException("Invalid data: " + e.getMessage(), e);
