@@ -1,4 +1,5 @@
 package com.example.coffeeshopmanagementsystem.config;
+import com.example.coffeeshopmanagementsystem.mapper.CustomerMapper;
 import com.example.coffeeshopmanagementsystem.security.mapper.RoleMapper;
 import com.example.coffeeshopmanagementsystem.security.mapper.UserMapper;
 import org.mapstruct.factory.Mappers;
@@ -15,5 +16,10 @@ public class MapperConfig {
     @Bean
     public UserMapper userMapper() {
         return Mappers.getMapper(UserMapper.class);
+    }
+
+    @Bean
+    public CustomerMapper customerMapper(){
+        return Mappers.getMapper(CustomerMapper.class);
     }
 }

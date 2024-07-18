@@ -17,6 +17,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Data
 public class Customer extends User {
+    private String name;
     private int loyaltyPoints;
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private Set<Order> orders;
