@@ -1,6 +1,7 @@
 package com.example.coffeeshopmanagementsystem.security.controller;
 
 import com.example.coffeeshopmanagementsystem.security.dto.RoleDto;
+import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
 import com.example.coffeeshopmanagementsystem.security.service.facade.RoleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,7 @@ public class RoleController {
     }
 
     @GetMapping("/name/{name}")
-    public ResponseEntity<RoleDto> getRoleByRoleName(@PathVariable String name) {
+    public ResponseEntity<RoleDto> getRoleByRoleName(@PathVariable RoleName name) {
         RoleDto role = roleService.findRoleByName(name);
         return ResponseEntity.ok(role);
     }

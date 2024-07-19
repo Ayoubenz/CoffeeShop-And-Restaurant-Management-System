@@ -1,25 +1,24 @@
-package com.example.coffeeshopmanagementsystem.dto;
+package com.example.coffeeshopmanagementsystem.dto.CustomerDto;
 
-import com.example.coffeeshopmanagementsystem.entity.Position;
-import com.example.coffeeshopmanagementsystem.entity.Shift;
+import com.example.coffeeshopmanagementsystem.entity.Order;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
 import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class EmployeeDto {
+public class CustomerDto {
 
     private Long id;
+    private String name;
     private String username;
     private String password;
     private Set<Role> roles;
-    private Position position;
-    private List<Shift> schedule;
+    private int loyaltyPoints;
+    private Set<Order> orders;
+
 }

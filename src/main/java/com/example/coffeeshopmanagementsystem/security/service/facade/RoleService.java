@@ -1,6 +1,7 @@
 package com.example.coffeeshopmanagementsystem.security.service.facade;
 
 import com.example.coffeeshopmanagementsystem.security.dto.RoleDto;
+import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
 
 import java.util.List;
 
@@ -8,7 +9,7 @@ public interface RoleService {
 
     RoleDto findRoleById(Long id);
 
-    RoleDto findRoleByName(String name);
+    RoleDto findRoleByName(RoleName name);
 
     RoleDto saveRole(RoleDto roleDto);
 

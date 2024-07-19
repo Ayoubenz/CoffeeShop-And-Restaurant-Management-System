@@ -2,6 +2,7 @@ package com.example.coffeeshopmanagementsystem.security.service.impl;
 
 import com.example.coffeeshopmanagementsystem.security.dto.RoleDto;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
+import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
 import com.example.coffeeshopmanagementsystem.security.mapper.RoleMapper;
 import com.example.coffeeshopmanagementsystem.security.repository.RoleRepository;
 import com.example.coffeeshopmanagementsystem.security.service.facade.RoleService;
@@ -29,7 +30,7 @@ public class RoleServiceImpl implements RoleService {
         return roleMapper.toDto(role);
     }
     @Override
-    public RoleDto findRoleByName(String name)
+    public RoleDto findRoleByName(RoleName name)
     {
         Role role = roleRepository
                 .findByName(name)

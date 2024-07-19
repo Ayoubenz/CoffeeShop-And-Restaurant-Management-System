@@ -1,4 +1,4 @@
-package com.example.coffeeshopmanagementsystem.dto;
+package com.example.coffeeshopmanagementsystem.dto.CustomerDto;
 
 import com.example.coffeeshopmanagementsystem.entity.Order;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
@@ -11,14 +11,12 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class CustomerDto {
+public class GetCustomerDto {
 
     private Long id;
     private String name;
     private String username;
-    private String password;
     private Set<Role> roles;
     private int loyaltyPoints;
     private Set<Order> orders;
-
 }

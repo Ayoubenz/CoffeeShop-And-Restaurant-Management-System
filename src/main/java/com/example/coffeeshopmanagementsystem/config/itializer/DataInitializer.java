@@ -1,6 +1,7 @@
 package com.example.coffeeshopmanagementsystem.config.itializer;
 
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
+import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
 import com.example.coffeeshopmanagementsystem.security.entity.User;
 import com.example.coffeeshopmanagementsystem.security.repository.RoleRepository;
 import com.example.coffeeshopmanagementsystem.security.repository.UserRepository;
@@ -25,25 +26,30 @@ public class DataInitializer implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Role adminRole;
 
-        var roleOpt = roleRepository.findByName("ROLE_ADMIN");
+        var roleOpt = roleRepository.findByName(RoleName.ROLE_ADMIN);
         if (roleOpt.isPresent()) {
             // If the role already exists, use it directly from the persistent context
             adminRole = roleOpt.get();
         } else {
             // If the role doesn't exist, create and persist a new instance
             adminRole = new Role();
-            adminRole.setName("ROLE_ADMIN");
+            adminRole.setName(RoleName.ROLE_ADMIN);
             adminRole = roleRepository.save(adminRole); // Persist and re-assign to catch any managed version
         }
 
-        if(roleRepository.findByName("ROLE_CUSTOMER").isEmpty()){
+        if(roleRepository.findByName(RoleName.ROLE_CUSTOMER).isEmpty()){
             Role customerRole = new Role();
-            customerRole.setName("ROLE_CUSTOMER");
+            customerRole.setName(RoleName.ROLE_CUSTOMER);
             roleRepository.save(customerRole);
         }
-        if(roleRepository.findByName("ROLE_EMPLOYEE").isEmpty()){
+        if(roleRepository.findByName(RoleName.ROLE_SERVER).isEmpty()){
             Role customerRole = new Role();
-            customerRole.setName("ROLE_EMPLOYEE");
+            customerRole.setName(RoleName.ROLE_SERVER);
+            roleRepository.save(customerRole);
+        }
+        if(roleRepository.findByName(RoleName.ROLE_CASHIER).isEmpty()){
+            Role customerRole = new Role();
+            customerRole.setName(RoleName.ROLE_CASHIER);
             roleRepository.save(customerRole);
         }
 

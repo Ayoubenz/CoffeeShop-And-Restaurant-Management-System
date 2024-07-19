@@ -1,13 +1,7 @@
 package com.example.coffeeshopmanagementsystem.dto;
 
-import com.example.coffeeshopmanagementsystem.entity.Customer;
-import com.example.coffeeshopmanagementsystem.entity.OrderItem;
+import com.example.coffeeshopmanagementsystem.dto.CustomerDto.CustomerDto;
 import com.example.coffeeshopmanagementsystem.entity.OrderStatus;
-import com.example.coffeeshopmanagementsystem.entity.Payment;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

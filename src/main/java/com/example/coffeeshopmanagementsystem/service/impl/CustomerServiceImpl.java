@@ -1,12 +1,15 @@
 package com.example.coffeeshopmanagementsystem.service.impl;
 
-import com.example.coffeeshopmanagementsystem.dto.CreateCustomerDto;
-import com.example.coffeeshopmanagementsystem.dto.CustomerDto;
-import com.example.coffeeshopmanagementsystem.dto.GetCustomerDto;
+import com.example.coffeeshopmanagementsystem.dto.CustomerDto.CreateCustomerDto;
+import com.example.coffeeshopmanagementsystem.dto.CustomerDto.CustomerDto;
+import com.example.coffeeshopmanagementsystem.dto.CustomerDto.GetCustomerDto;
+import com.example.coffeeshopmanagementsystem.dto.CustomerDto.UpdateCustomerDto;
 import com.example.coffeeshopmanagementsystem.entity.Customer;
+import com.example.coffeeshopmanagementsystem.exception.entities.CustomerException;
 import com.example.coffeeshopmanagementsystem.mapper.CustomerMapper;
 import com.example.coffeeshopmanagementsystem.repository.CustomerRepository;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
+import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
 import com.example.coffeeshopmanagementsystem.security.repository.RoleRepository;
 import com.example.coffeeshopmanagementsystem.service.facade.CustomerService;
 import jakarta.persistence.EntityNotFoundException;
@@ -56,8 +59,8 @@ public class CustomerServiceImpl implements CustomerService {
             customer.setPassword(encryptedPassword);
 
             //Assigning the Customer Role by default
-            Role customerRole = roleRepository.findByName("ROLE_CUSTOMER")
-                    .orElseThrow(() -> new RuntimeException("Role not found"));
+            Role customerRole = roleRepository.findByName(RoleName.ROLE_CUSTOMER)
+                    .orElseThrow(() -> new CustomerException("Role not found"));
             Set<Role> roles = new HashSet<>();
             roles.add(customerRole);
             customer.setRoles(roles);
@@ -69,13 +72,13 @@ public class CustomerServiceImpl implements CustomerService {
             throw new IllegalArgumentException("Invalid data: " + e.getMessage(), e);
         } catch (Exception e) {
             // Handle generic exceptions
-            throw new RuntimeException("Failed to create the Customer: " + e.getMessage(), e);
+            throw new CustomerException("Failed to create the Customer: " + e.getMessage(), e);
         }
     }
 
     @Override
     @Transactional
-    public CustomerDto updateCustomer(Long id, CustomerDto customerDTO) {
+    public GetCustomerDto updateCustomer(Long id, CustomerDto customerDTO) {
 
         try{
             GetCustomerDto foundCustomerDto = getCustomerById(id);
@@ -89,10 +92,31 @@ public class CustomerServiceImpl implements CustomerService {
             foundCustomer.setOrders(customerDTO.getOrders());
 
             Customer updatedCustomer = customerRepository.save(foundCustomer);
-            return customerMapper.toDto(updatedCustomer);
+            return customerMapper.toGetDto(updatedCustomer);
         }catch (Exception e)
         {
-            throw  new RuntimeException("Failed to update customer with id " + id + ": " + e.getMessage(), e);
+            throw  new CustomerException("Failed to update customer with id " + id + ": " + e.getMessage(), e);
+        }
+    }
+
+    @Override
+    @Transactional
+    public GetCustomerDto updateCustomerDetails (Long id , UpdateCustomerDto updateCustomerDto){
+
+        try{
+        Customer foundCustomer = customerRepository
+                .findById(id)
+                        .orElseThrow(() -> new CustomerException("Customer not found with id: " + id));
+
+        foundCustomer.setUsername(updateCustomerDto.getUsername());
+        foundCustomer.setPassword(updateCustomerDto.getPassword());
+        foundCustomer.setName(passwordEncoder.encode(updateCustomerDto.getName()));
+
+        Customer updatedCustomer = customerRepository.save(foundCustomer);
+        return customerMapper.toGetDto(updatedCustomer);
+        }catch (Exception e)
+        {
+            throw  new CustomerException("Failed to update customer with id " + id + ": " + e.getMessage(), e);
         }
     }
 

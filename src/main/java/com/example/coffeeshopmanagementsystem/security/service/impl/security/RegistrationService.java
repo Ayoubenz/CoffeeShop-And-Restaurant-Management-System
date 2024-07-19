@@ -2,6 +2,7 @@ package com.example.coffeeshopmanagementsystem.security.service.impl.security;
 
 
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
+import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
 import com.example.coffeeshopmanagementsystem.security.entity.User;
 import com.example.coffeeshopmanagementsystem.security.repository.RoleRepository;
 import com.example.coffeeshopmanagementsystem.security.repository.UserRepository;
@@ -22,7 +23,7 @@ public class RegistrationService {
     private final PasswordEncoder passwordEncoder;
 
     @Transactional
-    public User registerNewUser(String username, String password, Set<String> roleNames) {
+    public User registerNewUser(String username, String password, Set<RoleName> roleNames) {
 
         if (userRepository.findByUsername(username).isPresent()) {
             throw new IllegalStateException("Username already exists!");
