@@ -50,4 +50,10 @@ public class MapperConfig {
     SupplierMapper supplierMapper(){
         return Mappers.getMapper(SupplierMapper.class);
     }
+
+    @Bean
+    ShiftMapper shiftMapper(){
+        return Mappers.getMapper(ShiftMapper.class);
+    }
+
 }
