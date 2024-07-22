@@ -2,12 +2,16 @@ package com.example.coffeeshopmanagementsystem.service.impl;
 
 import com.example.coffeeshopmanagementsystem.dto.SupplierDto;
 import com.example.coffeeshopmanagementsystem.entity.Supplier;
+import com.example.coffeeshopmanagementsystem.exception.DataIntegrityException;
+import com.example.coffeeshopmanagementsystem.exception.entities.ServiceException;
 import com.example.coffeeshopmanagementsystem.mapper.SupplierMapper;
 import com.example.coffeeshopmanagementsystem.repository.SupplierRepository;
 import com.example.coffeeshopmanagementsystem.service.facade.SupplierService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,26 +38,38 @@ public class SupplierServiceImpl implements SupplierService {
     }
 
     @Override
+    @Transactional
     public SupplierDto createSupplier(SupplierDto supplierDto) {
-        Supplier supplier = supplierMapper.toEntity(supplierDto);
-        Supplier savedSupplier = supplierRepository.save(supplier);
-        return supplierMapper.toDto(savedSupplier);
+        try {
+            Supplier supplier = supplierMapper.toEntity(supplierDto);
+            Supplier savedSupplier = supplierRepository.save(supplier);
+            return supplierMapper.toDto(savedSupplier);
+        }catch (DataIntegrityViolationException e){
+            throw new DataIntegrityException("Invalid data: " + e.getMessage(), e);
+        }catch (Exception e){
+            throw new ServiceException("Failed to create the shift: " + e.getMessage(), e);
+        }
     }
 
     @Override
+    @Transactional
     public SupplierDto updateSupplier(Long id, SupplierDto supplierDto) {
-        Supplier existingSupplier = supplierRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Supplier not found"));
+        try {
+            Supplier existingSupplier = supplierRepository.findById(id)
+                    .orElseThrow(() -> new EntityNotFoundException("Supplier not found"));
 
-        // Update fields
-        existingSupplier.setName(supplierDto.getName());
-        existingSupplier.setPhoneNumber(supplierDto.getPhoneNumber());
-        existingSupplier.setEmail(supplierDto.getEmail());
-        existingSupplier.setAddress(supplierDto.getAddress());
-        existingSupplier.setDescription(supplierDto.getDescription());
+            // Update fields
+            existingSupplier.setName(supplierDto.getName());
+            existingSupplier.setPhoneNumber(supplierDto.getPhoneNumber());
+            existingSupplier.setEmail(supplierDto.getEmail());
+            existingSupplier.setAddress(supplierDto.getAddress());
+            existingSupplier.setDescription(supplierDto.getDescription());
 
-        Supplier updatedSupplier = supplierRepository.save(existingSupplier);
-        return supplierMapper.toDto(updatedSupplier);
+            Supplier updatedSupplier = supplierRepository.save(existingSupplier);
+            return supplierMapper.toDto(updatedSupplier);
+        }catch (Exception e){
+            throw new ServiceException("Failed to update the supplier with id " + id + ": " + e.getMessage(), e);
+        }
     }
 
     @Override
