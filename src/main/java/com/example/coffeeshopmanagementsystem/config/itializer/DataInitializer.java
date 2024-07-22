@@ -1,5 +1,7 @@
 package com.example.coffeeshopmanagementsystem.config.itializer;
 
+import com.example.coffeeshopmanagementsystem.entity.Employee;
+import com.example.coffeeshopmanagementsystem.entity.Position;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
 import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
 import com.example.coffeeshopmanagementsystem.security.entity.User;
@@ -55,10 +57,10 @@ public class DataInitializer implements CommandLineRunner {
 
         // Check if an admin user exists
         if (userRepository.findByUsername("admin").isEmpty()) {
-            User admin = new User();
+            Employee admin = new Employee();
             admin.setUsername("admin");
             admin.setPassword(passwordEncoder.encode("admin"));
-
+            admin.setPosition(Position.MANAGER);
             // Associate the ADMIN role with the new user
             Set<Role> adminRoles = new HashSet<>();
             adminRoles.add(adminRole); // adminRole is managed, either fetched or newly persisted

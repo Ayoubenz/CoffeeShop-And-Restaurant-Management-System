@@ -1,6 +1,6 @@
 package com.example.coffeeshopmanagementsystem.security.controller;
 
-import com.example.coffeeshopmanagementsystem.exception.secruity.TokenRefreshException;
+import com.example.coffeeshopmanagementsystem.security.exception.TokenRefreshException;
 import com.example.coffeeshopmanagementsystem.security.JwtTokenProvider;
 import com.example.coffeeshopmanagementsystem.security.entity.AuthenticationRequest;
 import com.example.coffeeshopmanagementsystem.security.entity.AuthenticationResponse;

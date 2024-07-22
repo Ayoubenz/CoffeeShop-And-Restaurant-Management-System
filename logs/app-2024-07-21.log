@@ -1,23 +1,23 @@
-2024-07-22 12:20:23.270 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 12196 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
-2024-07-22 12:20:23.291 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-22 12:20:25.323 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-22 12:20:25.584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 240 ms. Found 8 JPA repository interfaces.
-2024-07-22 12:20:26.462 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
-2024-07-22 12:20:26.487 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-22 12:20:26.489 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-2024-07-22 12:20:26.593 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-22 12:20:26.594 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3105 ms
-2024-07-22 12:20:26.829 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-22 12:20:26.932 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-07-22 12:20:26.991 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-07-22 12:20:27.516 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-22 12:20:27.559 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-22 12:20:28.103 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f36f34d
-2024-07-22 12:20:28.105 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-22 12:20:28.175 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-07-22 12:20:28.377 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2024-07-22 12:20:29.855 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-07-22 12:20:29.912 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
+2024-07-21 18:48:21.479 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 11492 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-21 18:48:21.503 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 18:48:23.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 18:48:23.687 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142 ms. Found 8 JPA repository interfaces.
+2024-07-21 18:48:24.564 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-21 18:48:24.587 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 18:48:24.589 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-21 18:48:24.681 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 18:48:24.681 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2977 ms
+2024-07-21 18:48:24.931 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 18:48:25.040 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-21 18:48:25.097 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-21 18:48:25.684 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 18:48:25.739 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-21 18:48:26.401 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7210f559
+2024-07-21 18:48:26.404 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-21 18:48:26.515 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-21 18:48:26.738 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-21 18:48:28.432 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 18:48:28.521 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -154,7 +154,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.customers' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.921 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
+2024-07-21 18:48:28.532 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -291,7 +291,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.employees' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.928 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
+2024-07-21 18:48:28.539 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -428,7 +428,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.inventory' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.934 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 18:48:28.551 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -565,7 +565,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.938 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 18:48:28.558 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -702,7 +702,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.942 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
+2024-07-21 18:48:28.568 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -839,7 +839,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.orders' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.947 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
+2024-07-21 18:48:28.574 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -976,7 +976,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.payments' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.951 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
+2024-07-21 18:48:28.581 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -1113,7 +1113,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.products' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.955 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
+2024-07-21 18:48:28.586 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -1250,7 +1250,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.refreshtoken' 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.959 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 18:48:28.592 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -1387,7 +1387,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.965 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 18:48:28.597 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -1524,7 +1524,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.970 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
+2024-07-21 18:48:28.602 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -1661,7 +1661,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shifts' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.974 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 18:48:28.608 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -1798,7 +1798,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:29.980 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 18:48:28.620 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -1935,35 +1935,38 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:20:31.753 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 12:20:32.548 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-07-22 12:20:32.549 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-07-22 12:20:32.777 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-22 12:20:33.688 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
-2024-07-22 12:20:33.699 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 11.118 seconds (process running for 13.146)
-2024-07-22 12:21:03.550 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 12:21:04.059 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-22 12:21:04.068 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-22 12:27:44.798 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 12688 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
-2024-07-22 12:27:44.801 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-22 12:27:46.261 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-22 12:27:46.410 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 8 JPA repository interfaces.
-2024-07-22 12:27:47.206 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
-2024-07-22 12:27:47.228 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-22 12:27:47.229 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-2024-07-22 12:27:47.316 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-22 12:27:47.317 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2446 ms
-2024-07-22 12:27:47.555 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-22 12:27:47.636 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-07-22 12:27:47.693 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-07-22 12:27:48.110 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-22 12:27:48.141 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-22 12:27:48.596 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23c72128
-2024-07-22 12:27:48.599 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-22 12:27:48.658 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-07-22 12:27:48.805 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2024-07-22 12:27:50.430 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-07-22 12:27:50.489 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
+2024-07-21 18:48:30.484 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 18:48:31.397 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-21 18:48:31.399 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-21 18:48:31.655 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 18:48:32.685 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-21 18:48:32.698 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 12.001 seconds (process running for 14.149)
+2024-07-21 18:49:40.063 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 18:49:40.063 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-21 18:49:40.067 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-21 18:50:02.274 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 18:50:02.718 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-21 18:50:02.727 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-21 18:50:08.663 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 9416 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-21 18:50:08.667 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 18:50:09.971 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 18:50:10.109 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 127 ms. Found 8 JPA repository interfaces.
+2024-07-21 18:50:10.808 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-21 18:50:10.821 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 18:50:10.822 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-21 18:50:10.912 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 18:50:10.913 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2174 ms
+2024-07-21 18:50:11.110 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 18:50:11.177 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-21 18:50:11.219 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-21 18:50:11.608 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 18:50:11.641 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-21 18:50:12.045 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dbc607d
+2024-07-21 18:50:12.048 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-21 18:50:12.110 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-21 18:50:12.271 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-21 18:50:13.685 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 18:50:13.743 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -2100,7 +2103,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.customers' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.497 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
+2024-07-21 18:50:13.750 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -2237,7 +2240,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.employees' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.503 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
+2024-07-21 18:50:13.756 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -2374,7 +2377,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.inventory' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.508 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 18:50:13.760 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -2511,7 +2514,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.512 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 18:50:13.764 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -2648,7 +2651,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.518 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
+2024-07-21 18:50:13.768 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -2785,7 +2788,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.orders' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.522 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
+2024-07-21 18:50:13.772 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -2922,7 +2925,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.payments' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.526 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
+2024-07-21 18:50:13.776 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -3059,7 +3062,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.products' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.530 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
+2024-07-21 18:50:13.780 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -3196,7 +3199,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.refreshtoken' 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.534 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 18:50:13.784 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -3333,7 +3336,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.538 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 18:50:13.788 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -3470,7 +3473,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.543 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
+2024-07-21 18:50:13.792 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -3607,7 +3610,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shifts' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.547 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 18:50:13.796 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -3744,7 +3747,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:50.560 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 18:50:13.806 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -3881,35 +3884,40 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:27:52.382 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 12:27:53.119 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-07-22 12:27:53.120 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-07-22 12:27:53.336 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-22 12:27:54.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
-2024-07-22 12:27:54.230 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 10.038 seconds (process running for 11.506)
-2024-07-22 12:27:59.597 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 12:28:00.004 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-22 12:28:00.027 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-22 12:46:41.916 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 15572 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
-2024-07-22 12:46:41.920 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-22 12:46:43.360 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-22 12:46:43.502 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133 ms. Found 8 JPA repository interfaces.
-2024-07-22 12:46:44.210 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
-2024-07-22 12:46:44.224 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-22 12:46:44.225 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-2024-07-22 12:46:44.297 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-22 12:46:44.297 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2309 ms
-2024-07-22 12:46:44.506 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-22 12:46:44.588 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-07-22 12:46:44.632 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-07-22 12:46:45.044 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-22 12:46:45.078 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-22 12:46:45.474 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@628bd77e
-2024-07-22 12:46:45.476 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-22 12:46:45.537 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-07-22 12:46:45.694 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2024-07-22 12:46:47.120 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-07-22 12:46:47.175 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
+2024-07-21 18:50:15.306 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 18:50:16.027 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-21 18:50:16.028 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-21 18:50:16.243 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 18:50:17.116 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-21 18:50:17.128 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.102 seconds (process running for 10.587)
+2024-07-21 18:51:12.842 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 18:51:12.843 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-21 18:51:12.846 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-21 18:51:15.400 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1350 ms
+2024-07-21 18:55:17.318 [http-nio-8075-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.Duration` from Object value (token `JsonToken.START_OBJECT`)]
+2024-07-21 19:15:50.944 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 19:15:51.508 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-21 19:15:51.564 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-21 19:15:59.276 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 19348 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-21 19:15:59.280 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 19:16:00.749 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 19:16:00.890 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131 ms. Found 8 JPA repository interfaces.
+2024-07-21 19:16:01.610 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-21 19:16:01.625 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 19:16:01.625 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-21 19:16:01.698 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 19:16:01.699 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2343 ms
+2024-07-21 19:16:01.916 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 19:16:01.992 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-21 19:16:02.042 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-21 19:16:02.489 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 19:16:02.523 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-21 19:16:02.974 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a984952
+2024-07-21 19:16:02.977 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-21 19:16:03.039 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-21 19:16:03.222 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-21 19:16:04.654 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 19:16:04.712 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -4046,7 +4054,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.customers' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.182 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
+2024-07-21 19:16:04.718 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -4183,7 +4191,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.employees' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.186 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
+2024-07-21 19:16:04.723 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -4320,7 +4328,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.inventory' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.190 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 19:16:04.727 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -4457,7 +4465,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.194 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 19:16:04.730 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -4594,7 +4602,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.198 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
+2024-07-21 19:16:04.733 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -4731,7 +4739,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.orders' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.202 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
+2024-07-21 19:16:04.737 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -4868,7 +4876,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.payments' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.205 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
+2024-07-21 19:16:04.741 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5005,7 +5013,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.products' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.209 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
+2024-07-21 19:16:04.744 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5142,7 +5150,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.refreshtoken' 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.213 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 19:16:04.748 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5279,7 +5287,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.217 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 19:16:04.751 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5416,7 +5424,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.221 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
+2024-07-21 19:16:04.755 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5553,7 +5561,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shifts' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.224 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 19:16:04.758 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5690,7 +5698,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:47.229 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 19:16:04.768 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5827,35 +5835,158 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 12:46:48.692 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 12:46:49.386 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-07-22 12:46:49.387 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-07-22 12:46:49.587 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-22 12:46:50.444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
-2024-07-22 12:46:50.457 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.133 seconds (process running for 10.662)
-2024-07-22 12:49:24.032 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 12:49:24.535 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-22 12:49:24.543 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-22 13:39:46.406 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 13500 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
-2024-07-22 13:39:46.411 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-22 13:39:47.887 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-22 13:39:48.052 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153 ms. Found 9 JPA repository interfaces.
-2024-07-22 13:39:49.079 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
-2024-07-22 13:39:49.106 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-22 13:39:49.107 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-2024-07-22 13:39:49.181 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-22 13:39:49.182 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2694 ms
-2024-07-22 13:39:49.389 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-22 13:39:49.460 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-07-22 13:39:49.502 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-07-22 13:39:49.906 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-22 13:39:49.937 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-22 13:39:50.330 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fbe8fd3
-2024-07-22 13:39:50.339 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-22 13:39:50.399 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-07-22 13:39:50.553 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2024-07-22 13:39:51.969 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-07-22 13:39:52.025 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
+2024-07-21 19:16:06.045 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 19:16:06.779 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-21 19:16:06.781 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-21 19:16:06.976 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 19:16:07.846 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-21 19:16:07.856 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.189 seconds (process running for 10.848)
+2024-07-21 19:16:34.252 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 19:16:34.253 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-21 19:16:34.255 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-21 19:16:36.396 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1260 ms
+2024-07-21 19:17:24.922 [http-nio-8075-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'java.time.Duration com.example.coffeeshopmanagementsystem.dto.TaskDto.getDuration()'] with root cause
+java.lang.NoSuchMethodError: 'java.time.Duration com.example.coffeeshopmanagementsystem.dto.TaskDto.getDuration()'
+	at com.example.coffeeshopmanagementsystem.mapper.TaskMapperImpl.toEntity(TaskMapperImpl.java:39)
+	at com.example.coffeeshopmanagementsystem.service.impl.TaskServiceImpl.createTask(TaskServiceImpl.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.example.coffeeshopmanagementsystem.service.impl.TaskServiceImpl$$SpringCGLIB$$0.createTask(<generated>)
+	at com.example.coffeeshopmanagementsystem.controller.TaskController.createTask(TaskController.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.coffeeshopmanagementsystem.security.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-07-21 19:18:33.853 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 19:18:34.334 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-21 19:18:34.355 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-21 19:22:03.851 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 11284 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-21 19:22:03.855 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 19:22:05.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 19:22:05.919 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 196 ms. Found 8 JPA repository interfaces.
+2024-07-21 19:22:07.046 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-21 19:22:07.066 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 19:22:07.068 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-21 19:22:07.182 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 19:22:07.183 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3241 ms
+2024-07-21 19:22:07.438 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 19:22:07.521 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-21 19:22:07.572 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-21 19:22:08.092 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 19:22:08.138 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-21 19:22:08.612 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bd2430f
+2024-07-21 19:22:08.615 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-21 19:22:08.694 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-21 19:22:08.920 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-21 19:22:10.787 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 19:22:10.855 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -5992,7 +6123,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.customers' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.032 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
+2024-07-21 19:22:10.863 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -6129,7 +6260,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.employees' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.037 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
+2024-07-21 19:22:10.869 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -6266,7 +6397,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.inventory' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.041 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 19:22:10.873 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -6403,7 +6534,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.045 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 19:22:10.876 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -6540,7 +6671,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.049 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
+2024-07-21 19:22:10.880 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -6677,7 +6808,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.orders' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.053 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
+2024-07-21 19:22:10.884 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -6814,7 +6945,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.payments' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.057 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
+2024-07-21 19:22:10.887 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -6951,7 +7082,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.products' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.061 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
+2024-07-21 19:22:10.891 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -7088,7 +7219,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.refreshtoken' 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.064 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 19:22:10.895 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -7225,7 +7356,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.068 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 19:22:10.899 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -7362,7 +7493,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.072 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
+2024-07-21 19:22:10.902 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -7499,7 +7630,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shifts' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.076 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 19:22:10.906 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -7636,7 +7767,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:52.080 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 19:22:10.910 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -7773,39 +7904,39 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 13:39:53.439 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 13:39:54.207 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-07-22 13:39:54.208 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-07-22 13:39:54.402 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-22 13:39:55.266 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
-2024-07-22 13:39:55.277 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.476 seconds (process running for 10.893)
-2024-07-22 13:43:56.425 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-22 13:43:56.426 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-22 13:43:56.430 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-07-22 13:43:58.765 [http-nio-8075-exec-7] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1367 ms
-2024-07-22 13:49:13.468 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 13:49:13.950 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-22 13:49:13.967 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-22 14:03:10.198 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 11028 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
-2024-07-22 14:03:10.201 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-22 14:03:11.519 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-22 14:03:11.665 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137 ms. Found 9 JPA repository interfaces.
-2024-07-22 14:03:12.375 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
-2024-07-22 14:03:12.401 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-22 14:03:12.402 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-2024-07-22 14:03:12.470 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-22 14:03:12.471 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2201 ms
-2024-07-22 14:03:12.766 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-22 14:03:12.892 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-07-22 14:03:12.964 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-07-22 14:03:13.574 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-22 14:03:13.622 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-22 14:03:14.167 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d80e411
-2024-07-22 14:03:14.171 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-22 14:03:14.260 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-07-22 14:03:14.485 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2024-07-22 14:03:16.392 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-07-22 14:03:16.469 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
+2024-07-21 19:22:13.355 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 19:22:14.374 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-21 19:22:14.376 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-21 19:22:14.645 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 19:22:15.696 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-21 19:22:15.714 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 12.642 seconds (process running for 14.509)
+2024-07-21 19:22:26.696 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 19:22:26.697 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-21 19:22:26.700 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-21 19:22:29.776 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1896 ms
+2024-07-21 19:26:56.366 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 19:26:57.019 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-21 19:26:57.041 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-21 19:51:01.648 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 16864 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-21 19:51:01.659 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-21 19:51:03.956 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-21 19:51:04.179 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 208 ms. Found 8 JPA repository interfaces.
+2024-07-21 19:51:05.074 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-21 19:51:05.091 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 19:51:05.092 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-21 19:51:05.183 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 19:51:05.184 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3334 ms
+2024-07-21 19:51:05.456 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-21 19:51:05.553 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-21 19:51:05.625 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-21 19:51:06.309 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-21 19:51:06.378 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-21 19:51:07.011 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6eb00cbe
+2024-07-21 19:51:07.018 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-21 19:51:07.158 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-21 19:51:07.438 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-21 19:51:09.491 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-21 19:51:09.557 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table customers drop foreign key FKpog72rpahj62h7nod9wwc28if" via JDBC [Table 'coffeeshop_db.customers' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -7942,7 +8073,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.customers' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.476 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
+2024-07-21 19:51:09.566 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table employees drop foreign key FKd6th9xowehhf1kmmq1dsseq28" via JDBC [Table 'coffeeshop_db.employees' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -8079,7 +8210,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.employees' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.481 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
+2024-07-21 19:51:09.571 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table inventory drop foreign key FKq2yge7ebtfuvwufr6lwfwqy9l" via JDBC [Table 'coffeeshop_db.inventory' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -8216,7 +8347,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.inventory' doe
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.485 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 19:51:09.575 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKbioxgbv59vetrxe0ejfubep1w" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -8353,7 +8484,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.489 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
+2024-07-21 19:51:09.579 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table order_items drop foreign key FKocimc7dtr037rh4ls4l95nlfi" via JDBC [Table 'coffeeshop_db.order_items' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -8490,7 +8621,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.order_items' d
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.493 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
+2024-07-21 19:51:09.583 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table orders drop foreign key FKpxtb8awmi0dk6smoh2vp1litg" via JDBC [Table 'coffeeshop_db.orders' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -8627,7 +8758,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.orders' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.497 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
+2024-07-21 19:51:09.587 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table payments drop foreign key FK81gagumt0r8y3rmudcgpbk42l" via JDBC [Table 'coffeeshop_db.payments' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -8764,7 +8895,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.payments' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.501 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
+2024-07-21 19:51:09.591 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table products drop foreign key FK6i174ixi9087gcvvut45em7fd" via JDBC [Table 'coffeeshop_db.products' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -8901,7 +9032,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.products' does
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.505 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
+2024-07-21 19:51:09.595 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table refreshtoken drop foreign key FKa652xrdji49m4isx38pp4p80p" via JDBC [Table 'coffeeshop_db.refreshtoken' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -9038,7 +9169,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.refreshtoken' 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.509 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 19:51:09.598 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKgutjkyqqv5ve5okoh8cbwgwal" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -9175,7 +9306,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.512 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
+2024-07-21 19:51:09.602 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shift_task drop foreign key FKquhv9la092ajau7b7jsk30id" via JDBC [Table 'coffeeshop_db.shift_task' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -9312,7 +9443,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shift_task' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.515 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
+2024-07-21 19:51:09.605 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table shifts drop foreign key FKtbsbc3nmr4b1vlwtnd944q9u7" via JDBC [Table 'coffeeshop_db.shifts' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -9449,7 +9580,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.shifts' doesn'
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.519 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 19:51:09.609 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKh8ciramu9cc9q3qcqiv4ue8a6" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -9586,7 +9717,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:16.524 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
+2024-07-21 19:51:09.619 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_roles drop foreign key FKhfh9dx7w3ubf1co1vdev94g3f" via JDBC [Table 'coffeeshop_db.user_roles' doesn't exist]
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
@@ -9723,16 +9854,12 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'coffeeshop_db.user_roles' do
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 125 common frames omitted
-2024-07-22 14:03:17.917 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 14:03:19.023 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-07-22 14:03:19.027 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-07-22 14:03:19.355 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-22 14:03:20.398 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
-2024-07-22 14:03:20.413 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 10.832 seconds (process running for 12.273)
-2024-07-22 14:03:59.455 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-22 14:03:59.455 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-22 14:03:59.458 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-07-22 14:04:01.577 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1284 ms
-2024-07-22 14:16:05.111 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-07-22 14:16:05.569 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-22 14:16:05.590 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-21 19:51:11.375 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 19:51:12.607 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-21 19:51:12.609 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-21 19:51:12.887 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-21 19:51:14.165 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-21 19:51:14.179 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 13.665 seconds (process running for 15.524)
+2024-07-21 19:51:31.873 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-21 19:51:32.355 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-21 19:51:32.364 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

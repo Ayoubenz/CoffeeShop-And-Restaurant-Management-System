@@ -11,6 +11,7 @@ import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity(name = "employees")
+@DiscriminatorValue("EMPLOYEE")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

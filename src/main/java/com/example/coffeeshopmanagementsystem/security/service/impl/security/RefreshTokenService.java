@@ -1,6 +1,7 @@
 package com.example.coffeeshopmanagementsystem.security.service.impl.security;
 
-import com.example.coffeeshopmanagementsystem.exception.secruity.TokenRefreshException;
+import com.example.coffeeshopmanagementsystem.security.JwtTokenProvider;
+import com.example.coffeeshopmanagementsystem.security.exception.TokenRefreshException;
 import com.example.coffeeshopmanagementsystem.security.entity.RefreshToken;
 import com.example.coffeeshopmanagementsystem.security.repository.RefreshTokenRepository;
 import com.example.coffeeshopmanagementsystem.security.repository.UserRepository;
@@ -24,6 +25,7 @@ public class RefreshTokenService {
 
     private final RefreshTokenRepository refreshTokenRepository;
     private final UserRepository userRepository;
+    private final JwtTokenProvider jwtTokenProvider;
 
     public Optional<RefreshToken> findByToken(String token) {
         return refreshTokenRepository.findByToken(token);
@@ -36,8 +38,10 @@ public class RefreshTokenService {
         RefreshToken refreshToken = new RefreshToken();
 
         refreshToken.setUser(userRepository.findById(userId).orElseThrow(() -> new EntityNotFoundException("User doesn't exist with the given id "+ userId)));
+        String refreshTokenJwt = jwtTokenProvider.generateRefreshToken(userId, refreshTokenDurationMs);
+
         refreshToken.setExpiryDate(Instant.now().plusMillis(refreshTokenDurationMs));
-        refreshToken.setToken(UUID.randomUUID().toString());
+        refreshToken.setToken(refreshTokenJwt);
 
         refreshToken = refreshTokenRepository.save(refreshToken);
         return refreshToken;

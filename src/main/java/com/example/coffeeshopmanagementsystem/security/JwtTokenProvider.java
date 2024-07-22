@@ -44,6 +44,16 @@ public class JwtTokenProvider {
                 .compact();
     }
 
+    public String generateRefreshToken(Long userId, long expirationTime) {
+        return Jwts
+                .builder()
+                .setSubject(userId.toString())
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + expirationTime))
+                .signWith(SignatureAlgorithm.HS256, getSignKey())
+                .compact();
+    }
+
     public boolean validateJwtToken(String authToken) {
         try {
             Jwts.parser().setSigningKey(key).build().parseClaimsJws(authToken);

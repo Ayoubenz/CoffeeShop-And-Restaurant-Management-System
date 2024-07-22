@@ -2,6 +2,7 @@ package com.example.coffeeshopmanagementsystem.entity;
 
 import com.example.coffeeshopmanagementsystem.security.entity.User;
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
@@ -13,6 +14,7 @@ import java.util.Set;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity(name = "customers")
+@DiscriminatorValue("CUSTOMER")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

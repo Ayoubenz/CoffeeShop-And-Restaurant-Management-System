@@ -1,4 +1,4 @@
-package com.example.coffeeshopmanagementsystem.security.service.facade;
+package com.example.coffeeshopmanagementsystem.service.facade;
 
 import com.example.coffeeshopmanagementsystem.dto.InventoryDto;
 

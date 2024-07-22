@@ -1,7 +1,6 @@
 package com.example.coffeeshopmanagementsystem.dto;
 
-import com.example.coffeeshopmanagementsystem.entity.Product;
-import jakarta.persistence.*;
+import com.example.coffeeshopmanagementsystem.dto.ProductDto.ProductDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -5,7 +5,8 @@ import com.example.coffeeshopmanagementsystem.dto.EmployeeDto.EmployeeDto;
 import com.example.coffeeshopmanagementsystem.dto.EmployeeDto.GetEmployeeDto;
 import com.example.coffeeshopmanagementsystem.dto.EmployeeDto.UpdateEmployeeDetailsDto;
 import com.example.coffeeshopmanagementsystem.entity.Employee;
-import com.example.coffeeshopmanagementsystem.exception.entities.EmployeeException;
+import com.example.coffeeshopmanagementsystem.exception.DataIntegrityException;
+import com.example.coffeeshopmanagementsystem.exception.entities.ServiceException;
 import com.example.coffeeshopmanagementsystem.mapper.EmployeeMapper;
 import com.example.coffeeshopmanagementsystem.repository.EmployeeRepository;
 import com.example.coffeeshopmanagementsystem.service.facade.EmployeeService;
@@ -60,10 +61,10 @@ public class EmployeeServiceImpl implements EmployeeService {
             return employeeMapper.toGetDto(savedEmployee);
         }catch (DataIntegrityViolationException e) {
             // Handle specific exceptions (e.g., if a unique constraint is violated)
-            throw new IllegalArgumentException("Invalid data: " + e.getMessage(), e);
+            throw new DataIntegrityException("Invalid data: " + e.getMessage(), e);
         }catch (Exception e)
         {
-            throw new EmployeeException("Failed to create the Customer: " + e.getMessage(), e);
+            throw new ServiceException("Failed to create the employee : " + e.getMessage(), e);
         }
     }
 
@@ -86,7 +87,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             return employeeMapper.toGetDto(updatedEmployee);
         }catch (Exception e)
         {
-            throw  new EmployeeException("Failed to update employee with id " + id + ": " + e.getMessage(), e);
+            throw  new ServiceException("Failed to update employee with id " + id + ": " + e.getMessage(), e);
         }
     }
 
@@ -97,7 +98,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         try {
             Employee foundEmployee = employeeRepository
                     .findById(id)
-                    .orElseThrow(() -> new EmployeeException("Employee not found with id "+id));
+                    .orElseThrow(() -> new EntityNotFoundException("Employee not found with id "+id));
 
             foundEmployee.setUsername(updateEmployeeDetailsDto.getUsername());
             foundEmployee.setPassword(passwordEncoder.encode(updateEmployeeDetailsDto.getPassword()));
@@ -107,7 +108,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             return employeeMapper.toGetDto(updatedEmployee);
         }catch (Exception e)
         {
-            throw  new EmployeeException("Failed to update employee with id " + id + ": " + e.getMessage(), e);
+            throw  new ServiceException("Failed to update employee with id " + id + ": " + e.getMessage(), e);
         }
     }
 

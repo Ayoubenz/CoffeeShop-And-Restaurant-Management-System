@@ -5,7 +5,8 @@ import com.example.coffeeshopmanagementsystem.dto.CustomerDto.CustomerDto;
 import com.example.coffeeshopmanagementsystem.dto.CustomerDto.GetCustomerDto;
 import com.example.coffeeshopmanagementsystem.dto.CustomerDto.UpdateCustomerDto;
 import com.example.coffeeshopmanagementsystem.entity.Customer;
-import com.example.coffeeshopmanagementsystem.exception.entities.CustomerException;
+import com.example.coffeeshopmanagementsystem.exception.DataIntegrityException;
+import com.example.coffeeshopmanagementsystem.exception.entities.ServiceException;
 import com.example.coffeeshopmanagementsystem.mapper.CustomerMapper;
 import com.example.coffeeshopmanagementsystem.repository.CustomerRepository;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
@@ -60,7 +61,7 @@ public class CustomerServiceImpl implements CustomerService {
 
             //Assigning the Customer Role by default
             Role customerRole = roleRepository.findByName(RoleName.ROLE_CUSTOMER)
-                    .orElseThrow(() -> new CustomerException("Role not found"));
+                    .orElseThrow(() -> new EntityNotFoundException("Role not found"));
             Set<Role> roles = new HashSet<>();
             roles.add(customerRole);
             customer.setRoles(roles);
@@ -69,10 +70,10 @@ public class CustomerServiceImpl implements CustomerService {
             return customerMapper.toGetDto(savedCustomer);
         } catch (DataIntegrityViolationException e) {
             // Handle specific exceptions (e.g., if a unique constraint is violated)
-            throw new IllegalArgumentException("Invalid data: " + e.getMessage(), e);
+            throw new DataIntegrityException("Invalid data: " + e.getMessage(), e);
         } catch (Exception e) {
             // Handle generic exceptions
-            throw new CustomerException("Failed to create the Customer: " + e.getMessage(), e);
+            throw new ServiceException("Failed to create the Customer: " + e.getMessage(), e);
         }
     }
 
@@ -95,7 +96,7 @@ public class CustomerServiceImpl implements CustomerService {
             return customerMapper.toGetDto(updatedCustomer);
         }catch (Exception e)
         {
-            throw  new CustomerException("Failed to update customer with id " + id + ": " + e.getMessage(), e);
+            throw  new ServiceException("Failed to update customer with id " + id + ": " + e.getMessage(), e);
         }
     }
 
@@ -106,7 +107,7 @@ public class CustomerServiceImpl implements CustomerService {
         try{
         Customer foundCustomer = customerRepository
                 .findById(id)
-                        .orElseThrow(() -> new CustomerException("Customer not found with id: " + id));
+                        .orElseThrow(() -> new ServiceException("Customer not found with id: " + id));
 
         foundCustomer.setUsername(updateCustomerDto.getUsername());
         foundCustomer.setPassword(updateCustomerDto.getPassword());
@@ -116,7 +117,7 @@ public class CustomerServiceImpl implements CustomerService {
         return customerMapper.toGetDto(updatedCustomer);
         }catch (Exception e)
         {
-            throw  new CustomerException("Failed to update customer with id " + id + ": " + e.getMessage(), e);
+            throw  new ServiceException("Failed to update customer with id " + id + ": " + e.getMessage(), e);
         }
     }
 

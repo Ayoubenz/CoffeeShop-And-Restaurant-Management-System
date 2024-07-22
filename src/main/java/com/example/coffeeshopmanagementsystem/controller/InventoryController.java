@@ -1,7 +1,7 @@
 package com.example.coffeeshopmanagementsystem.controller;
 
 import com.example.coffeeshopmanagementsystem.dto.InventoryDto;
-import com.example.coffeeshopmanagementsystem.security.service.facade.InventoryService;
+import com.example.coffeeshopmanagementsystem.service.facade.InventoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

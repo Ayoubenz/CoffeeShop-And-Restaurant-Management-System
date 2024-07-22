@@ -1,4 +1,4 @@
-package com.example.coffeeshopmanagementsystem.security.repository;
+package com.example.coffeeshopmanagementsystem.repository;
 
 import com.example.coffeeshopmanagementsystem.entity.Inventory;
 import org.springframework.data.jpa.repository.JpaRepository;
