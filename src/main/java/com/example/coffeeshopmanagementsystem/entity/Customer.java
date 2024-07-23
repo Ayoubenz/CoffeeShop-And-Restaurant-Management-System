@@ -21,6 +21,7 @@ import java.util.Set;
 public class Customer extends User {
     private int loyaltyPoints = 0;
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
     private Set<Order> orders;
 
 }

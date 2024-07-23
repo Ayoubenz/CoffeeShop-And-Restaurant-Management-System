@@ -1,5 +1,7 @@
 package com.example.coffeeshopmanagementsystem.entity;
 
+import com.example.coffeeshopmanagementsystem.entity.enums.PaymentMethod;
+import com.example.coffeeshopmanagementsystem.entity.enums.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +20,8 @@ public class Payment {
     private Long id;
     private double amount;
     private LocalDateTime orderDateAndTime;
+    @Enumerated(EnumType.STRING)
+    private PaymentStatus paymentStatus;
     @Enumerated(EnumType.STRING)
     private PaymentMethod paymentMethod;
 

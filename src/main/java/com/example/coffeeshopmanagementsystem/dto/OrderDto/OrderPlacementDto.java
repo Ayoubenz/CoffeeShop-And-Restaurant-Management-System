@@ -14,5 +14,4 @@ import java.util.Set;
 public class OrderPlacementDto {
     private Long customerId;
     private Set<OrderItemDto> orderItems;
-    private Set<PaymentDto> payments;
 }

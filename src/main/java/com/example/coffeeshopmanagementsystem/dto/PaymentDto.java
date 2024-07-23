@@ -1,11 +1,9 @@
 package com.example.coffeeshopmanagementsystem.dto;
 
-import com.example.coffeeshopmanagementsystem.entity.PaymentMethod;
+import com.example.coffeeshopmanagementsystem.entity.enums.PaymentMethod;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor

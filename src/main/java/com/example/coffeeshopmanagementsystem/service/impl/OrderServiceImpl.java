@@ -5,6 +5,8 @@ import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderPlacementDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderItemDto;
 import com.example.coffeeshopmanagementsystem.dto.PaymentDto;
 import com.example.coffeeshopmanagementsystem.entity.*;
+import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
+import com.example.coffeeshopmanagementsystem.entity.enums.PaymentStatus;
 import com.example.coffeeshopmanagementsystem.mapper.OrderMapper;
 import com.example.coffeeshopmanagementsystem.repository.*;
 import com.example.coffeeshopmanagementsystem.service.facade.OrderService;
@@ -29,7 +31,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @Transactional
-    public OrderDto placeOrder(OrderPlacementDto orderPlacementDto){
+    public OrderDto placeOrderInShop(OrderPlacementDto orderPlacementDto){
 
         //Check if the customer exists
         Customer customer = customerRepository
@@ -69,15 +71,13 @@ public class OrderServiceImpl implements OrderService {
 
         // Create and save payments
         Set<Payment> payments = new HashSet<>();
-        for (PaymentDto paymentDto : orderPlacementDto.getPayments()) {
             Payment payment = new Payment();
-            payment.setAmount(paymentDto.getAmount());
-            payment.setPaymentMethod(paymentDto.getPaymentMethod());
-            payment.setOrderDateAndTime(LocalDateTime.now());
+            payment.setAmount(totalPrice);
             payment.setOrder(savedOrder);
+            payment.setPaymentStatus(PaymentStatus.PENDING);
             Payment savedPayment = paymentRepository.save(payment);
             payments.add(savedPayment);
-        }
+
 
         savedOrder.setPayment(payments);
 

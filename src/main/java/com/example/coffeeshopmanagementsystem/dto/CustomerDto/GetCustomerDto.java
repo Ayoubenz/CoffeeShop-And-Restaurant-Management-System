@@ -1,7 +1,9 @@
 package com.example.coffeeshopmanagementsystem.dto.CustomerDto;
 
+import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderDto;
 import com.example.coffeeshopmanagementsystem.entity.Order;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,5 +20,6 @@ public class GetCustomerDto {
     private String username;
     private Set<Role> roles;
     private int loyaltyPoints;
-    private Set<Order> orders;
+    @JsonIgnore
+    private Set<OrderDto> orders;
 }

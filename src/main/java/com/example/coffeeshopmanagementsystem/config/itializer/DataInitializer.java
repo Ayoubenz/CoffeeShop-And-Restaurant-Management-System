@@ -1,10 +1,9 @@
 package com.example.coffeeshopmanagementsystem.config.itializer;
 
 import com.example.coffeeshopmanagementsystem.entity.Employee;
-import com.example.coffeeshopmanagementsystem.entity.Position;
+import com.example.coffeeshopmanagementsystem.entity.enums.Position;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
 import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
-import com.example.coffeeshopmanagementsystem.security.entity.User;
 import com.example.coffeeshopmanagementsystem.security.repository.RoleRepository;
 import com.example.coffeeshopmanagementsystem.security.repository.UserRepository;
 import jakarta.transaction.Transactional;

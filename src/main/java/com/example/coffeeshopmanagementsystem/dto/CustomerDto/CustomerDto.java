@@ -1,5 +1,6 @@
 package com.example.coffeeshopmanagementsystem.dto.CustomerDto;
 
+import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderDto;
 import com.example.coffeeshopmanagementsystem.entity.Order;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
 import lombok.AllArgsConstructor;
@@ -19,6 +20,6 @@ public class CustomerDto {
     private String password;
     private Set<Role> roles;
     private int loyaltyPoints;
-    private Set<Order> orders;
+    private Set<OrderDto> orders;
 
 }

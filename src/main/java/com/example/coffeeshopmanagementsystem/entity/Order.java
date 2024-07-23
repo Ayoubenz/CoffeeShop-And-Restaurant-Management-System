@@ -1,8 +1,10 @@
 package com.example.coffeeshopmanagementsystem.entity;
 
+import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
@@ -25,8 +27,10 @@ public class Order {
     @JoinColumn(name = "customer_id")
     private Customer customer;
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
     private Set<OrderItem> orderItems;
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
     private Set<Payment> payment;
 
 }

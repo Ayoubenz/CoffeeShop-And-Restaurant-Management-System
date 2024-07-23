@@ -1,5 +1,6 @@
 package com.example.coffeeshopmanagementsystem.entity;
 
+import com.example.coffeeshopmanagementsystem.entity.enums.Position;
 import com.example.coffeeshopmanagementsystem.security.entity.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

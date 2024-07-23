@@ -1,6 +1,6 @@
 package com.example.coffeeshopmanagementsystem.dto.EmployeeDto;
 
-import com.example.coffeeshopmanagementsystem.entity.Position;
+import com.example.coffeeshopmanagementsystem.entity.enums.Position;
 import com.example.coffeeshopmanagementsystem.entity.Shift;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
 import lombok.AllArgsConstructor;

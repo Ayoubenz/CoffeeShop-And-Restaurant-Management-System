@@ -1,4 +1,4 @@
-package com.example.coffeeshopmanagementsystem.entity;
+package com.example.coffeeshopmanagementsystem.entity.enums;
 
 public enum OrderStatus {
 

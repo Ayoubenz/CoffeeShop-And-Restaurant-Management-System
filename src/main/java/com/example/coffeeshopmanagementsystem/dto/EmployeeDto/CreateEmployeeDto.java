@@ -1,14 +1,12 @@
 package com.example.coffeeshopmanagementsystem.dto.EmployeeDto;
 
-import com.example.coffeeshopmanagementsystem.entity.Position;
-import com.example.coffeeshopmanagementsystem.entity.Shift;
+import com.example.coffeeshopmanagementsystem.entity.enums.Position;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
 import java.util.Set;
 
 @AllArgsConstructor

@@ -5,9 +5,11 @@ import com.example.coffeeshopmanagementsystem.dto.CustomerDto.CustomerDto;
 import com.example.coffeeshopmanagementsystem.dto.CustomerDto.GetCustomerDto;
 import com.example.coffeeshopmanagementsystem.dto.CustomerDto.UpdateCustomerDto;
 import com.example.coffeeshopmanagementsystem.entity.Customer;
+import com.example.coffeeshopmanagementsystem.entity.Order;
 import com.example.coffeeshopmanagementsystem.exception.DataIntegrityException;
 import com.example.coffeeshopmanagementsystem.exception.entities.ServiceException;
 import com.example.coffeeshopmanagementsystem.mapper.CustomerMapper;
+import com.example.coffeeshopmanagementsystem.mapper.OrderMapper;
 import com.example.coffeeshopmanagementsystem.repository.CustomerRepository;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
 import com.example.coffeeshopmanagementsystem.security.entity.RoleName;
@@ -23,6 +25,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -32,6 +35,7 @@ public class CustomerServiceImpl implements CustomerService {
     private final CustomerMapper customerMapper;
     private final PasswordEncoder passwordEncoder;
     private final RoleRepository roleRepository;
+    private final OrderMapper orderMapper;
     @Override
     public GetCustomerDto getCustomerById(Long id) {
         return customerRepository.findById(id)
@@ -90,7 +94,8 @@ public class CustomerServiceImpl implements CustomerService {
             foundCustomer.setName(customerDTO.getName());
             foundCustomer.setRoles(customerDTO.getRoles());
             foundCustomer.setLoyaltyPoints(customerDTO.getLoyaltyPoints());
-            foundCustomer.setOrders(customerDTO.getOrders());
+            Set<Order> orders = customerDTO.getOrders().stream().map(orderMapper::toEntity).collect(Collectors.toSet());
+            foundCustomer.setOrders(orders);
 
             Customer updatedCustomer = customerRepository.save(foundCustomer);
             return customerMapper.toGetDto(updatedCustomer);
