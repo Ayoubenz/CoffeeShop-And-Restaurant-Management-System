@@ -1,6 +1,8 @@
-package com.example.coffeeshopmanagementsystem.dto;
+package com.example.coffeeshopmanagementsystem.dto.OrderDto;
 
 import com.example.coffeeshopmanagementsystem.dto.CustomerDto.CustomerDto;
+import com.example.coffeeshopmanagementsystem.dto.OrderItemDto;
+import com.example.coffeeshopmanagementsystem.dto.PaymentDto;
 import com.example.coffeeshopmanagementsystem.entity.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +19,7 @@ public class OrderDto {
     private LocalDateTime orderDate;
     private OrderStatus status;
     private Double totalPrice;
-    private CustomerDto customerDto;
-    private Set<OrderItemDto> orderItemDtoss;
-    private Set<PaymentDto> paymentDto;
+    private CustomerDto customers;
+    private Set<OrderItemDto> items;
+    private Set<PaymentDto> payments;
 }

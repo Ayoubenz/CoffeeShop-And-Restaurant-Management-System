@@ -74,6 +74,7 @@ public class ProductServiceImpl implements ProductService {
             // Update simple fields
             existingProduct.setName(productDto.getName());
             existingProduct.setDescription(productDto.getDescription());
+            existingProduct.setPrice(productDto.getPrice());
 
             // Set the Supplier entity
             existingProduct.setSupplier(supplierRepository

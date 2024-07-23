@@ -56,4 +56,14 @@ public class MapperConfig {
         return Mappers.getMapper(ShiftMapper.class);
     }
 
+    @Bean
+    PaymentMapper paymentMapper(){
+        return Mappers.getMapper(PaymentMapper.class);
+    }
+
+    @Bean
+    OrderMapper orderMapper(){
+        return Mappers.getMapper(OrderMapper.class);
+    }
+
 }

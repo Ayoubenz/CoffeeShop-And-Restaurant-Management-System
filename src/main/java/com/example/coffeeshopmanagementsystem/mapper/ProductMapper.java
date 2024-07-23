@@ -18,8 +18,10 @@ public interface ProductMapper {
     Product toEntity (ProductDto productDto);
 
     @Mapping(source = "supplier.id", target = "supplierId")
+    @Mapping(source = "price", target = "price")
     CreateProductDto toCreateDto(Product product);
 
     @Mapping(source = "supplierId", target = "supplier.id")
+    @Mapping(source = "price", target = "price")
     Product toCreateEntity(CreateProductDto createProductDto);
 }

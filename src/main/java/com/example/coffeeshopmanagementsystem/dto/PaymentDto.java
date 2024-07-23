@@ -11,10 +11,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Data
 public class PaymentDto {
-
-    private Long id;
     private double amount;
-    private LocalDateTime orderDateAndTime;
     private PaymentMethod paymentMethod;
-    private Long orderId;
 }
