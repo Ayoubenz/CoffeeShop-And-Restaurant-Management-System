@@ -105,6 +105,15 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public List<GetOrderDto> getOrderByStatus(OrderStatus status){
+        return orderRepository
+                .findByStatus(status)
+                .stream()
+                .map(orderMapper::toGetDto)
+                .toList();
+    }
+
+        @Override
     public List<GetOrderDto> getAllOrders(){
         return orderRepository
                 .findAll()

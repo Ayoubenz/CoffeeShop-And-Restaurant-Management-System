@@ -2,6 +2,7 @@ package com.example.coffeeshopmanagementsystem.controller;
 
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.GetOrderDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderPlacementDto;
+import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
 import com.example.coffeeshopmanagementsystem.service.facade.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -31,6 +32,12 @@ public class OrderController {
     public ResponseEntity<List<GetOrderDto>> getOrdersByCustomerId(@PathVariable Long id){
         List<GetOrderDto> orders = orderService.getOrdersByCustomerId(id);
         return new ResponseEntity<>(orders, HttpStatus.OK);
+    }
+
+    @GetMapping("/status/{status}")
+    public ResponseEntity<List<GetOrderDto>> getOrderByStatus(@PathVariable OrderStatus status){
+        List<GetOrderDto> orders = orderService.getOrderByStatus(status);
+        return new ResponseEntity<>(orders,HttpStatus.OK);
     }
 
     @GetMapping("/all")
