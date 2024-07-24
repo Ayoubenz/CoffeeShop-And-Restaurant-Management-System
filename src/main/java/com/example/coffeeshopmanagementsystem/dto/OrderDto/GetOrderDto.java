@@ -14,12 +14,12 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class OrderDto {
+public class GetOrderDto {
     private Long id;
     private LocalDateTime orderDate;
     private OrderStatus status;
     private Double totalPrice;
-    private CustomerDto customer;
+    private Long customerId;
     private Set<OrderItemDto> orderItems;
     private Set<PaymentDto> payments;
 }

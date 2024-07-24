@@ -1,6 +1,8 @@
 package com.example.coffeeshopmanagementsystem.entity;
 
 import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,17 +22,21 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDateTime orderDate;
+    //@Enumerated(EnumType.STRING)
     private OrderStatus status;
     private Double totalPrice;
 
     @ManyToOne
     @JoinColumn(name = "customer_id")
+    @JsonBackReference
     private Customer customer;
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
+    @JsonManagedReference
     private Set<OrderItem> orderItems;
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Payment> payment;
+    @JsonManagedReference
+    private Set<Payment> payments;
 
 }

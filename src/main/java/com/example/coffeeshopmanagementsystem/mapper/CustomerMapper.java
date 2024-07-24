@@ -11,6 +11,7 @@ import org.mapstruct.Mapper;
 public interface CustomerMapper {
 
     //CustomerDto
+
     CustomerDto toDto (Customer customer);
     Customer toEntity (CustomerDto customerDto);
 

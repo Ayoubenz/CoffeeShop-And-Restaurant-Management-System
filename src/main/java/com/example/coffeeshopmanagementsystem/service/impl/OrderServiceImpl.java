@@ -1,9 +1,9 @@
 package com.example.coffeeshopmanagementsystem.service.impl;
 
+import com.example.coffeeshopmanagementsystem.dto.OrderDto.GetOrderDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderPlacementDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderItemDto;
-import com.example.coffeeshopmanagementsystem.dto.PaymentDto;
 import com.example.coffeeshopmanagementsystem.entity.*;
 import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
 import com.example.coffeeshopmanagementsystem.entity.enums.PaymentStatus;
@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -79,8 +80,27 @@ public class OrderServiceImpl implements OrderService {
             payments.add(savedPayment);
 
 
-        savedOrder.setPayment(payments);
+        savedOrder.setPayments(payments);
 
         return orderMapper.toDto(savedOrder);
+    }
+
+    //Crud operations
+
+    @Override
+    public GetOrderDto getOrderById(Long id){
+        return orderRepository
+                .findById(id)
+                .map(orderMapper::toGetDto)
+                .orElseThrow(() -> new EntityNotFoundException("Order not found"));
+    }
+
+    @Override
+    public List<GetOrderDto> getAllOrders(){
+        return orderRepository
+                .findAll()
+                .stream()
+                .map(orderMapper::toGetDto)
+                .toList();
     }
 }

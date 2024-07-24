@@ -1,6 +1,8 @@
 package com.example.coffeeshopmanagementsystem.entity;
 
 import com.example.coffeeshopmanagementsystem.security.entity.User;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
@@ -22,6 +24,7 @@ public class Customer extends User {
     private int loyaltyPoints = 0;
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
+    @JsonManagedReference
     private Set<Order> orders;
 
 }
