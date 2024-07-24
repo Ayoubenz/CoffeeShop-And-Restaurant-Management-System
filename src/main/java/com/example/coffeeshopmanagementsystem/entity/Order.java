@@ -22,7 +22,8 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDateTime orderDate;
-    //@Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)
+    @Column(length = 50)
     private OrderStatus status;
     private Double totalPrice;
 

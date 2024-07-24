@@ -6,7 +6,7 @@ import com.example.coffeeshopmanagementsystem.entity.Order;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper
+@Mapper(componentModel = "spring", uses = {OrderItemMapper.class})
 public interface OrderMapper {
 
     OrderDto toDto(Order order);

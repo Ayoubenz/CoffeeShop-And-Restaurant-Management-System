@@ -1,8 +1,7 @@
 package com.example.coffeeshopmanagementsystem.dto.OrderDto;
 
-import com.example.coffeeshopmanagementsystem.dto.CustomerDto.CustomerDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderItemDto;
-import com.example.coffeeshopmanagementsystem.dto.PaymentDto;
+import com.example.coffeeshopmanagementsystem.dto.PaymentDto.PaymentDto;
 import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;

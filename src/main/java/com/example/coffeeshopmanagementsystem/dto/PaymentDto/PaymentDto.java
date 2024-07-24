@@ -1,4 +1,4 @@
-package com.example.coffeeshopmanagementsystem.dto;
+package com.example.coffeeshopmanagementsystem.dto.PaymentDto;
 
 import com.example.coffeeshopmanagementsystem.entity.enums.PaymentMethod;
 import lombok.AllArgsConstructor;

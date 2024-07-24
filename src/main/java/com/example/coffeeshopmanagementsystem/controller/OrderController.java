@@ -1,7 +1,6 @@
 package com.example.coffeeshopmanagementsystem.controller;
 
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.GetOrderDto;
-import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderPlacementDto;
 import com.example.coffeeshopmanagementsystem.service.facade.OrderService;
 import lombok.RequiredArgsConstructor;
@@ -17,8 +16,8 @@ import java.util.List;
 public class OrderController {
     private final OrderService orderService;
     @PostMapping("/place-order")
-    public ResponseEntity<OrderDto> placeOrder(@RequestBody OrderPlacementDto orderPlacementDto){
-        OrderDto placedOrder = orderService.placeOrderInShop(orderPlacementDto);
+    public ResponseEntity<GetOrderDto> placeOrder(@RequestBody OrderPlacementDto orderPlacementDto){
+        GetOrderDto placedOrder = orderService.placeOrderInShop(orderPlacementDto);
         return new ResponseEntity<>(placedOrder, HttpStatus.CREATED);
     }
 
@@ -28,9 +27,21 @@ public class OrderController {
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
 
+    @GetMapping("/customer/{id}")
+    public ResponseEntity<List<GetOrderDto>> getOrdersByCustomerId(@PathVariable Long id){
+        List<GetOrderDto> orders = orderService.getOrdersByCustomerId(id);
+        return new ResponseEntity<>(orders, HttpStatus.OK);
+    }
+
     @GetMapping("/all")
     public ResponseEntity<List<GetOrderDto>> getAllOrders(){
         List<GetOrderDto> orders = orderService.getAllOrders();
         return new ResponseEntity<>(orders, HttpStatus.OK);
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<Void> deleteOrder(@PathVariable Long id){
+        orderService.deleteOrder(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

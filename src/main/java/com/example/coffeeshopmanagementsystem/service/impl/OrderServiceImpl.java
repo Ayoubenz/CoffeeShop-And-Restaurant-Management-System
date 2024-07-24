@@ -1,7 +1,6 @@
 package com.example.coffeeshopmanagementsystem.service.impl;
 
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.GetOrderDto;
-import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderPlacementDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderItemDto;
 import com.example.coffeeshopmanagementsystem.entity.*;
@@ -32,7 +31,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @Transactional
-    public OrderDto placeOrderInShop(OrderPlacementDto orderPlacementDto){
+    public GetOrderDto placeOrderInShop(OrderPlacementDto orderPlacementDto){
 
         //Check if the customer exists
         Customer customer = customerRepository
@@ -82,11 +81,10 @@ public class OrderServiceImpl implements OrderService {
 
         savedOrder.setPayments(payments);
 
-        return orderMapper.toDto(savedOrder);
+        return orderMapper.toGetDto(savedOrder);
     }
 
     //Crud operations
-
     @Override
     public GetOrderDto getOrderById(Long id){
         return orderRepository
@@ -96,11 +94,30 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public List<GetOrderDto> getOrdersByCustomerId(Long id){
+        Customer foundCustomer = customerRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Customer not found"));
+        return orderRepository
+                .findByCustomerId(foundCustomer.getId())
+                .stream()
+                .map(orderMapper::toGetDto)
+                .toList();
+    }
+
+    @Override
     public List<GetOrderDto> getAllOrders(){
         return orderRepository
                 .findAll()
                 .stream()
                 .map(orderMapper::toGetDto)
                 .toList();
+    }
+
+    @Override
+    public void deleteOrder(Long id){
+        if(!orderRepository.existsById(id)){
+            throw new EntityNotFoundException("Order you want to delete doesn't exist");
+        }
+        orderRepository.deleteById(id);
     }
 }
