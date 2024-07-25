@@ -24,8 +24,14 @@ public class ProductController {
 
     @GetMapping("/all")
     public ResponseEntity<List<ProductDto>> getAllProduct(){
-        List<ProductDto> productDtos = productService.getAllProduct();
-        return new ResponseEntity<>(productDtos, HttpStatus.OK);
+        List<ProductDto> products = productService.getAllProduct();
+        return new ResponseEntity<>(products, HttpStatus.OK);
+    }
+
+    @GetMapping("/order/{orderId}")
+    public ResponseEntity<List<ProductDto>> getProductsByOrderId(@PathVariable Long orderId){
+        List<ProductDto> products = productService.getProductsByOrderId(orderId);
+        return new ResponseEntity<>(products, HttpStatus.OK);
     }
 
     @PostMapping

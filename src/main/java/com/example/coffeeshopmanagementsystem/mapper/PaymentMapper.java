@@ -15,8 +15,6 @@ public interface PaymentMapper {
     GetPaymentDto toGetDto(Payment payment);
     Payment toGetEntity(GetPaymentDto getPaymentDto);
 
-    @Mapping(source = "order.id", target = "orderId")
     CreatePaymentDto toCreateDto(Payment payment);
-    @Mapping(source = "orderId", target = "order.id")
     Payment toCreateEntity(CreatePaymentDto createPaymentDto);
 }

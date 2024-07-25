@@ -18,6 +18,5 @@ public class CreateEmployeeDto {
     private String username;
     private String password;
     private String name;
-    private Set<Role> roles;
     private Position position;
 }

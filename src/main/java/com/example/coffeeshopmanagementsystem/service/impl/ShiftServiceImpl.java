@@ -48,7 +48,7 @@ public class ShiftServiceImpl implements ShiftService {
         try {
             Shift shift = shiftMapper.toEntity(shiftDto);
             //Checking if Employee exist retrieving it then save it to the shift with its id
-            Employee employee = employeeRepository.findById(shiftDto.getEmployee().getId()).orElseThrow(() -> new EntityNotFoundException("Employee not found"));
+            Employee employee = employeeRepository.findById(shiftDto.getEmployeeId()).orElseThrow(() -> new EntityNotFoundException("Employee not found"));
             shift.setEmployee(employee);
             Shift savedShift = shiftRepository.save(shift);
             return shiftMapper.toDto(savedShift);
@@ -69,7 +69,7 @@ public class ShiftServiceImpl implements ShiftService {
             // Update fields
             existingShift.setStartTime(shiftDto.getStartTime());
             existingShift.setEndTime(shiftDto.getEndTime());
-            existingShift.setEmployee(employeeRepository.findById(shiftDto.getEmployee().getId())
+            existingShift.setEmployee(employeeRepository.findById(shiftDto.getId())
                     .orElseThrow(() -> new EntityNotFoundException("Employee not found")));
             existingShift.setTasks(shiftDto.getTasks().stream()
                     .map(taskMapper::toEntity)

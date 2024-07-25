@@ -24,6 +24,12 @@ public class PaymentController {
         GetPaymentDto payment = paymentService.addPayment(orderId, createPaymentDto);
         return new ResponseEntity<>(payment, HttpStatus.CREATED);
     }
+
+    @GetMapping("{id}")
+    public ResponseEntity<GetPaymentDto> getPaymentById(@PathVariable Long id){
+        GetPaymentDto payment = paymentService.getPaymentById(id);
+        return new ResponseEntity<>(payment, HttpStatus.OK);
+    }
     @GetMapping("/order/{id}")
     public ResponseEntity<List<GetPaymentDto>> getPaymentsByOrderId(@PathVariable Long id){
         List<GetPaymentDto> payments = paymentService.getPaymentsByOrderId(id);

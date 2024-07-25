@@ -94,6 +94,13 @@ public class PaymentServiceImpl implements PaymentService {
         return paymentMapper.toGetDto(savedNewPayment);
     }
     @Override
+    public GetPaymentDto getPaymentById(Long id){
+        return paymentRepository
+                .findById(id)
+                .map(paymentMapper::toGetDto)
+                .orElseThrow(() -> new EntityNotFoundException("Payment not found"));
+    }
+    @Override
     public List<GetPaymentDto> getPaymentsByOrderId(Long id) {
 
         Order foundOrder = orderRepository.findById(id)
@@ -116,18 +123,47 @@ public class PaymentServiceImpl implements PaymentService {
     @Override
     @Transactional
     public GetPaymentDto updatePayment(Long id, CreatePaymentDto createPaymentDto){
+
         try {
             Payment existingPayment = paymentRepository
                     .findById(id)
                     .orElseThrow(() -> new EntityNotFoundException("Payment not found"));
+
+            //Find the order
+            Order order = orderRepository
+                    .findOrderByPaymentId(id)
+                    .orElseThrow(() -> new EntityNotFoundException("Order not found"));
+
+            // Calculate the total paid amount excluding the existing payment
+            double totalPaid = calculateTotalPaid(order.getId()) - existingPayment.getAmount();
+
+            // Calculate the remaining amount to be paid
+            double orderAmount = order.getTotalPrice();
+            double remainingAmount = orderAmount - totalPaid;
+
+            //verify if the updated amount is bigger than the order remaining amount
+            if(createPaymentDto.getAmount() >remainingAmount){
+                throw new ServiceException("The payment amount is larger than the amount to be paid : "+ remainingAmount);
+            }
+
             //update the payment
             existingPayment.setAmount(createPaymentDto.getAmount());
             existingPayment.setOrderDateAndTime(createPaymentDto.getOrderDateAndTime());
             existingPayment.setPaymentStatus(createPaymentDto.getPaymentStatus());
             existingPayment.setPaymentMethod(createPaymentDto.getPaymentMethod());
 
-            //Save it
+            //Save the updated amount
             Payment updatedPayment = paymentRepository.save(existingPayment);
+
+            //updating the order status after editing the payment
+            if(updatedPayment.getAmount() == remainingAmount){
+                order.setStatus(OrderStatus.PAID);
+            }else{
+                order.setStatus(OrderStatus.PARTIALLY_PAID);
+            }
+            //update the order
+            orderRepository.save(order);
+
             return paymentMapper.toGetDto(updatedPayment);
         }catch (Exception e){
             throw new ServiceException("Failed to update the payment with id " + id + ": " + e.getMessage(), e);

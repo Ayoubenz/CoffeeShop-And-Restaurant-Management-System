@@ -48,6 +48,15 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<ProductDto> getProductsByOrderId(Long orderId){
+        return productRepository
+                .findProductsByOrderId(orderId)
+                .stream()
+                .map(productMapper::toDto)
+                .toList();
+    }
+
+    @Override
     @Transactional
     public ProductDto createProduct(CreateProductDto createProductDto) {
         try {

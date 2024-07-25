@@ -34,6 +34,12 @@ public class OrderController {
         return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 
+    @GetMapping("/payment/{id}")
+    public ResponseEntity<GetOrderDto> getOrderByPaymentId(@PathVariable Long id){
+        GetOrderDto order = orderService.getOrderByPaymentId(id);
+        return new ResponseEntity<>(order, HttpStatus.OK);
+    }
+
     @GetMapping("/status/{status}")
     public ResponseEntity<List<GetOrderDto>> getOrderByStatus(@PathVariable OrderStatus status){
         List<GetOrderDto> orders = orderService.getOrderByStatus(status);

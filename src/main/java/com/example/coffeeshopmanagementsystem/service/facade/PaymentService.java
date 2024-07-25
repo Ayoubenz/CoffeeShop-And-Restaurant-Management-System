@@ -6,6 +6,7 @@ import com.example.coffeeshopmanagementsystem.dto.PaymentDto.GetPaymentDto;
 import java.util.List;
 
 public interface PaymentService {
+    GetPaymentDto getPaymentById(Long id);
     List<GetPaymentDto> getPaymentsByOrderId(Long id);
     GetPaymentDto addPayment(Long orderId, CreatePaymentDto createPaymentDto);
     List<GetPaymentDto> getAllpayments();

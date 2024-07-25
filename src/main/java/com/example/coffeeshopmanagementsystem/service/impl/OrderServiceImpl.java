@@ -113,6 +113,17 @@ public class OrderServiceImpl implements OrderService {
                 .toList();
     }
 
+    @Override
+    public GetOrderDto getOrderByPaymentId(Long id){
+        Payment payment = paymentRepository
+                .findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Payment not found"));
+        return orderRepository
+                .findOrderByPaymentId(id)
+                .map(orderMapper::toGetDto)
+                .orElseThrow(() -> new EntityNotFoundException("Order not found"));
+    }
+
         @Override
     public List<GetOrderDto> getAllOrders(){
         return orderRepository

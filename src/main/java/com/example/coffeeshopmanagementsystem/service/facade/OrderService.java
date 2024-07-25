@@ -11,6 +11,7 @@ public interface OrderService {
     GetOrderDto getOrderById(Long id);
     List<GetOrderDto> getOrdersByCustomerId(Long id);
     List<GetOrderDto> getOrderByStatus(OrderStatus status);
+    GetOrderDto getOrderByPaymentId(Long id);
     List<GetOrderDto> getAllOrders();
     void deleteOrder(Long id);
 

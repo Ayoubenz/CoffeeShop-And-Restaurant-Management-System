@@ -16,6 +16,6 @@ public class ShiftDto {
     private Long id;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    private EmployeeDto employee;
+    private Long employeeId;
     private List<TaskDto> tasks;
 }
