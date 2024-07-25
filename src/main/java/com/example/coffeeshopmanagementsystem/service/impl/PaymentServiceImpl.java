@@ -104,6 +104,45 @@ public class PaymentServiceImpl implements PaymentService {
                 .toList();
     }
 
+    @Override
+    public List<GetPaymentDto> getAllpayments(){
+        return paymentRepository
+                .findAll()
+                .stream()
+                .map(paymentMapper::toGetDto)
+                .toList();
+    }
+
+    @Override
+    @Transactional
+    public GetPaymentDto updatePayment(Long id, CreatePaymentDto createPaymentDto){
+        try {
+            Payment existingPayment = paymentRepository
+                    .findById(id)
+                    .orElseThrow(() -> new EntityNotFoundException("Payment not found"));
+            //update the payment
+            existingPayment.setAmount(createPaymentDto.getAmount());
+            existingPayment.setOrderDateAndTime(createPaymentDto.getOrderDateAndTime());
+            existingPayment.setPaymentStatus(createPaymentDto.getPaymentStatus());
+            existingPayment.setPaymentMethod(createPaymentDto.getPaymentMethod());
+
+            //Save it
+            Payment updatedPayment = paymentRepository.save(existingPayment);
+            return paymentMapper.toGetDto(updatedPayment);
+        }catch (Exception e){
+            throw new ServiceException("Failed to update the payment with id " + id + ": " + e.getMessage(), e);
+
+        }
+    }
+
+    @Override
+    public void deletePayment(Long id){
+        if(!paymentRepository.existsById(id)){
+            throw new ServiceException("Payment not found");
+        }
+        paymentRepository.deleteById(id);
+    }
+
 
     //Utility methods
     private double calculateTotalPaid(Long orderId) {

@@ -29,4 +29,22 @@ public class PaymentController {
         List<GetPaymentDto> payments = paymentService.getPaymentsByOrderId(id);
         return new ResponseEntity<>(payments, HttpStatus.OK);
     }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<GetPaymentDto>> getAllPayments(){
+        List<GetPaymentDto> payments = paymentService.getAllpayments();
+        return new ResponseEntity<>(payments, HttpStatus.OK);
+    }
+
+    @PutMapping("{id}")
+    public ResponseEntity<GetPaymentDto> updatePayment(@PathVariable Long id,@RequestBody CreatePaymentDto createPaymentDto){
+        GetPaymentDto updatedPayment = paymentService.updatePayment(id, createPaymentDto);
+        return new ResponseEntity<>(updatedPayment, HttpStatus.OK);
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<HttpStatus> deletePayment(@PathVariable Long id){
+        paymentService.deletePayment(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }

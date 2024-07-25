@@ -16,5 +16,4 @@ public class CreatePaymentDto {
     private LocalDateTime orderDateAndTime;
     private PaymentStatus paymentStatus;
     private PaymentMethod paymentMethod;
-    private Long orderId;
 }
