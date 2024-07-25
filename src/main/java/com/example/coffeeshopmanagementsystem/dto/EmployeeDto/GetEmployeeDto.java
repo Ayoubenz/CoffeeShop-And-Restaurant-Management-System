@@ -1,5 +1,6 @@
 package com.example.coffeeshopmanagementsystem.dto.EmployeeDto;
 
+import com.example.coffeeshopmanagementsystem.dto.ShitfDto.ShiftDto;
 import com.example.coffeeshopmanagementsystem.entity.enums.Position;
 import com.example.coffeeshopmanagementsystem.entity.Shift;
 import com.example.coffeeshopmanagementsystem.security.entity.Role;
@@ -20,6 +21,6 @@ public class GetEmployeeDto {
     private String name;
     private Set<Role> roles;
     private Position position;
-    private List<Shift> schedule;
+    private List<ShiftDto> schedule;
 
 }

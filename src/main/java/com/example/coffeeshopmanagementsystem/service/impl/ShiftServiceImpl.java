@@ -1,14 +1,17 @@
 package com.example.coffeeshopmanagementsystem.service.impl;
 
-import com.example.coffeeshopmanagementsystem.dto.ShiftDto;
+import com.example.coffeeshopmanagementsystem.dto.ShitfDto.CreateShiftDto;
+import com.example.coffeeshopmanagementsystem.dto.ShitfDto.ShiftDto;
 import com.example.coffeeshopmanagementsystem.entity.Employee;
 import com.example.coffeeshopmanagementsystem.entity.Shift;
+import com.example.coffeeshopmanagementsystem.entity.Task;
 import com.example.coffeeshopmanagementsystem.exception.DataIntegrityException;
 import com.example.coffeeshopmanagementsystem.exception.entities.ServiceException;
 import com.example.coffeeshopmanagementsystem.mapper.ShiftMapper;
 import com.example.coffeeshopmanagementsystem.mapper.TaskMapper;
 import com.example.coffeeshopmanagementsystem.repository.EmployeeRepository;
 import com.example.coffeeshopmanagementsystem.repository.ShiftRepository;
+import com.example.coffeeshopmanagementsystem.repository.TaskRepository;
 import com.example.coffeeshopmanagementsystem.service.facade.ShiftService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +28,7 @@ public class ShiftServiceImpl implements ShiftService {
     private final ShiftRepository shiftRepository;
     private final ShiftMapper shiftMapper;
     private final EmployeeRepository employeeRepository;
+    private final TaskRepository taskRepository;
     private final TaskMapper taskMapper;
 
     @Override
@@ -32,6 +36,15 @@ public class ShiftServiceImpl implements ShiftService {
         Shift shift = shiftRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Shift not found"));
         return shiftMapper.toDto(shift);
+    }
+
+    @Override
+    public List<ShiftDto> getShiftByEmployeeId(Long employeeId){
+        return shiftRepository
+                .findByEmployeeId(employeeId)
+                .stream()
+                .map(shiftMapper::toDto)
+                .toList();
     }
 
     @Override
@@ -44,12 +57,19 @@ public class ShiftServiceImpl implements ShiftService {
 
     @Override
     @Transactional
-    public ShiftDto createShift(ShiftDto shiftDto) {
+    public ShiftDto createShift(CreateShiftDto createShiftDto) {
         try {
-            Shift shift = shiftMapper.toEntity(shiftDto);
-            //Checking if Employee exist retrieving it then save it to the shift with its id
-            Employee employee = employeeRepository.findById(shiftDto.getEmployeeId()).orElseThrow(() -> new EntityNotFoundException("Employee not found"));
+            Shift shift = shiftMapper.toCreateEntity(createShiftDto);
+            //Checking if Employee exist retrieving it then saving it to the shift with its id
+            Employee employee = employeeRepository.findById(createShiftDto.getEmployeeId()).orElseThrow(() -> new EntityNotFoundException("Employee not found"));
             shift.setEmployee(employee);
+            //Checking if Tasks exist retrieving them then saving them to the shift with their ids
+            List<Task> tasks = taskRepository.findAllById(createShiftDto.getTaskIds());
+            if(tasks.isEmpty()){
+                throw new ServiceException("Tasks assigned don't exist");
+            }else{
+                shift.setTasks(tasks);
+            }
             Shift savedShift = shiftRepository.save(shift);
             return shiftMapper.toDto(savedShift);
         }catch (DataIntegrityViolationException e){

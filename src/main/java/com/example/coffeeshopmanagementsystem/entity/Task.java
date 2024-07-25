@@ -1,14 +1,12 @@
 package com.example.coffeeshopmanagementsystem.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.Duration;
+import java.util.List;
 
 @Entity(name = "tasks")
 @AllArgsConstructor
@@ -21,4 +19,6 @@ public class Task {
     private Long id;
     private String description;
     private Duration duration;
+    @ManyToMany(mappedBy = "tasks")
+    private List<Shift> shifts;
 }

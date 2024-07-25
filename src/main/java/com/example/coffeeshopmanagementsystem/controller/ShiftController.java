@@ -1,6 +1,7 @@
 package com.example.coffeeshopmanagementsystem.controller;
 
-import com.example.coffeeshopmanagementsystem.dto.ShiftDto;
+import com.example.coffeeshopmanagementsystem.dto.ShitfDto.CreateShiftDto;
+import com.example.coffeeshopmanagementsystem.dto.ShitfDto.ShiftDto;
 import com.example.coffeeshopmanagementsystem.service.facade.ShiftService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -21,6 +22,12 @@ public class ShiftController {
         return new ResponseEntity<>(shiftDto, HttpStatus.OK);
     }
 
+    @GetMapping("/employee/{employeeId}")
+    public ResponseEntity<List<ShiftDto>> getShiftByEmployeeId(@PathVariable Long employeeId) {
+        List<ShiftDto> shifts = shiftService.getShiftByEmployeeId(employeeId);
+        return new ResponseEntity<>(shifts, HttpStatus.OK);
+    }
+
     @GetMapping("/all")
     public ResponseEntity<List<ShiftDto>> getAllShifts() {
         List<ShiftDto> shiftDtos = shiftService.getAllShifts();
@@ -28,8 +35,8 @@ public class ShiftController {
     }
 
     @PostMapping
-    public ResponseEntity<ShiftDto> createShift(@RequestBody ShiftDto shiftDto) {
-        ShiftDto createdShiftDto = shiftService.createShift(shiftDto);
+    public ResponseEntity<ShiftDto> createShift(@RequestBody CreateShiftDto createShiftDto) {
+        ShiftDto createdShiftDto = shiftService.createShift(createShiftDto);
         return new ResponseEntity<>(createdShiftDto, HttpStatus.CREATED);
     }
 
