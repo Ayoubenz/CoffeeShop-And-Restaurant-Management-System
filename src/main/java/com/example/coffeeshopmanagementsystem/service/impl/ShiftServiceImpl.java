@@ -19,6 +19,8 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -70,6 +72,8 @@ public class ShiftServiceImpl implements ShiftService {
             }else{
                 shift.setTasks(tasks);
             }
+            //Checking if tasks durations is within the shift time
+            checkTasksWithinShift(tasks,createShiftDto.getStartTime(),createShiftDto.getEndTime());
             Shift savedShift = shiftRepository.save(shift);
             return shiftMapper.toDto(savedShift);
         }catch (DataIntegrityViolationException e){
@@ -108,5 +112,21 @@ public class ShiftServiceImpl implements ShiftService {
             throw new EntityNotFoundException("Shift not found");
         }
         shiftRepository.deleteById(id);
+    }
+
+    //Utility method
+    private void checkTasksWithinShift(List<Task> tasks, LocalDateTime startTime, LocalDateTime endTime) {
+        // Calculate the total duration of the tasks
+        Duration tasksDuration = tasks.stream()
+                .map(Task::getDuration)
+                .reduce(Duration.ZERO, Duration::plus);
+
+        // Calculate the shift duration
+        Duration shiftDuration = Duration.between(startTime, endTime);
+
+        // Check if tasks duration is within the shift time
+        if (tasksDuration.compareTo(shiftDuration) > 0) {
+            throw new ServiceException("The duration of the tasks assigned surpass the shift duration");
+        }
     }
 }
