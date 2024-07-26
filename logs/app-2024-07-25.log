@@ -1,0 +1,491 @@
+2024-07-25 12:11:44.175 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 14220 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 12:11:44.194 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 12:11:45.970 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 12:11:46.165 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 181 ms. Found 13 JPA repository interfaces.
+2024-07-25 12:11:47.075 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 12:11:47.096 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 12:11:47.097 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 12:11:47.195 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 12:11:47.196 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2882 ms
+2024-07-25 12:11:47.537 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 12:11:47.715 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 12:11:47.832 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 12:11:48.661 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 12:11:48.778 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 12:11:49.735 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ef4297d
+2024-07-25 12:11:49.739 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 12:11:49.854 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 12:11:50.170 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 12:11:52.202 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 12:11:53.611 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 12:11:54.762 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 12:11:54.764 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 12:11:55.079 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 12:11:56.289 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 12:11:56.305 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 13.038 seconds (process running for 15.174)
+2024-07-25 12:13:55.267 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 12:13:55.268 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 12:13:55.272 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-25 12:14:01.981 [http-nio-8075-exec-1] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1337 ms
+2024-07-25 12:21:52.451 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 12:21:52.454 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 12:21:52.474 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 12:22:04.531 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 9152 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 12:22:04.535 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 12:22:06.221 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 12:22:06.418 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 185 ms. Found 13 JPA repository interfaces.
+2024-07-25 12:22:07.218 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 12:22:07.238 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 12:22:07.240 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 12:22:07.343 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 12:22:07.344 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2738 ms
+2024-07-25 12:22:07.572 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 12:22:07.642 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 12:22:07.688 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 12:22:08.095 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 12:22:08.128 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 12:22:08.522 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1818390b
+2024-07-25 12:22:08.524 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 12:22:08.583 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 12:22:08.730 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 12:22:10.149 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 12:22:10.417 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 12:22:11.302 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 12:22:11.304 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 12:22:11.510 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 12:22:13.047 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 12:22:13.059 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.221 seconds (process running for 11.119)
+2024-07-25 12:22:30.736 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 12:22:30.737 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 12:22:30.741 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-07-25 12:22:34.218 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1791 ms
+2024-07-25 12:29:54.834 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 12:29:54.839 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 12:29:54.852 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 12:33:48.805 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 4004 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 12:33:48.809 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 12:33:50.600 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 12:33:50.870 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 256 ms. Found 13 JPA repository interfaces.
+2024-07-25 12:33:51.926 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 12:33:51.945 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 12:33:51.946 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 12:33:52.049 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 12:33:52.050 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3172 ms
+2024-07-25 12:33:52.328 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 12:33:52.416 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 12:33:52.490 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 12:33:53.109 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 12:33:53.162 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 12:33:53.698 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31b650e9
+2024-07-25 12:33:53.701 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 12:33:53.764 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 12:33:53.925 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 12:33:55.357 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 12:33:55.620 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 12:33:56.275 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 12:33:56.972 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 12:33:56.973 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 12:33:57.187 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 12:33:58.054 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 12:33:58.068 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.938 seconds (process running for 11.641)
+2024-07-25 12:34:16.173 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 12:34:16.173 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 12:34:16.175 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-25 12:34:19.427 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1586 ms
+2024-07-25 12:37:08.722 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 12:37:08.725 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 12:37:08.736 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 13:13:29.050 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 15204 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 13:13:29.053 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 13:13:30.387 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 13:13:30.567 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 13 JPA repository interfaces.
+2024-07-25 13:13:31.270 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 13:13:31.283 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 13:13:31.284 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 13:13:31.358 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 13:13:31.358 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2240 ms
+2024-07-25 13:13:31.551 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 13:13:31.619 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 13:13:31.662 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 13:13:32.047 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 13:13:32.079 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 13:13:32.467 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@464a3430
+2024-07-25 13:13:32.469 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 13:13:32.528 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 13:13:32.683 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 13:13:34.135 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 13:13:34.429 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 13:13:35.146 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 13:13:35.861 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 13:13:35.863 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 13:13:36.076 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 13:13:37.098 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 13:13:37.111 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 8.674 seconds (process running for 10.083)
+2024-07-25 13:14:16.712 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 13:14:16.712 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 13:14:16.714 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-25 13:14:20.008 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1632 ms
+2024-07-25 13:19:28.199 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 13:19:28.204 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 13:19:28.214 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 13:26:51.631 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 9740 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 13:26:51.635 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 13:26:52.984 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 13:26:53.158 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164 ms. Found 13 JPA repository interfaces.
+2024-07-25 13:26:53.895 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 13:26:53.908 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 13:26:53.909 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 13:26:53.987 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 13:26:53.988 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2282 ms
+2024-07-25 13:26:54.175 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 13:26:54.254 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 13:26:54.295 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 13:26:54.683 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 13:26:54.717 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 13:26:55.106 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7805478c
+2024-07-25 13:26:55.108 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 13:26:55.170 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 13:26:55.317 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 13:26:56.696 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 13:26:56.959 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 13:26:57.575 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 13:26:58.283 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 13:26:58.284 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 13:26:58.468 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 13:26:59.332 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 13:26:59.344 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 8.324 seconds (process running for 9.76)
+2024-07-25 13:28:01.677 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 13:28:01.678 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 13:28:01.680 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-25 13:28:04.419 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1345 ms
+2024-07-25 13:34:05.777 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 13:34:05.782 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 13:34:05.803 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 13:35:56.698 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 996 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 13:35:56.701 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 13:35:58.025 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 13:35:58.215 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 181 ms. Found 13 JPA repository interfaces.
+2024-07-25 13:35:58.913 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 13:35:58.926 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 13:35:58.927 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 13:35:59.000 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 13:35:59.001 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2230 ms
+2024-07-25 13:35:59.187 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 13:35:59.257 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 13:35:59.300 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 13:35:59.692 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 13:35:59.725 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 13:36:00.118 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cdda548
+2024-07-25 13:36:00.120 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 13:36:00.199 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 13:36:00.352 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 13:36:01.738 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 13:36:01.996 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 13:36:02.620 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 13:36:03.291 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 13:36:03.292 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 13:36:03.483 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 13:36:04.351 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 13:36:04.364 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 8.278 seconds (process running for 9.685)
+2024-07-25 13:36:24.026 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 13:36:24.026 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 13:36:24.028 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-25 13:36:26.897 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1418 ms
+2024-07-25 13:37:25.766 [http-nio-8075-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'PT4H30M': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2024-07-25 13:42:36.667 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 13:42:36.672 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 13:42:36.684 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 13:47:52.219 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 11908 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 13:47:52.222 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 13:47:54.091 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 13:47:54.268 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 13 JPA repository interfaces.
+2024-07-25 13:47:55.121 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 13:47:55.136 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 13:47:55.137 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 13:47:55.215 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 13:47:55.216 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2915 ms
+2024-07-25 13:47:55.442 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 13:47:55.515 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 13:47:55.556 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 13:47:55.965 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 13:47:56.010 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 13:47:56.540 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63d3c9dc
+2024-07-25 13:47:56.543 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 13:47:56.604 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 13:47:56.754 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 13:47:58.191 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 13:47:58.453 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 13:47:59.104 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 13:47:59.795 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 13:47:59.796 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 13:47:59.992 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 13:48:00.892 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 13:48:00.909 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.37 seconds (process running for 10.847)
+2024-07-25 13:48:12.470 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 13:48:12.471 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 13:48:12.473 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-25 13:48:15.635 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1440 ms
+2024-07-25 14:13:54.826 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 14:13:54.831 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 14:13:54.842 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 14:16:05.715 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 13392 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 14:16:05.718 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 14:16:07.385 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 14:16:07.573 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 178 ms. Found 13 JPA repository interfaces.
+2024-07-25 14:16:08.373 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 14:16:08.387 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 14:16:08.387 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 14:16:08.463 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 14:16:08.464 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2663 ms
+2024-07-25 14:16:08.672 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 14:16:08.740 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 14:16:08.780 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 14:16:09.191 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 14:16:09.224 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 14:16:09.628 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11e24688
+2024-07-25 14:16:09.631 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 14:16:09.694 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 14:16:09.843 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 14:16:11.284 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 14:16:11.575 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 14:16:12.227 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 14:16:12.902 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 14:16:12.903 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 14:16:13.155 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 14:16:14.170 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 14:16:14.182 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.144 seconds (process running for 10.557)
+2024-07-25 14:16:36.668 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 14:16:36.668 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 14:16:36.670 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-25 14:16:39.438 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1287 ms
+2024-07-25 14:22:40.514 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 14:22:40.518 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 14:22:40.532 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 14:22:49.516 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 5764 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 14:22:49.520 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 14:22:51.488 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 14:22:51.847 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 340 ms. Found 13 JPA repository interfaces.
+2024-07-25 14:22:52.861 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 14:22:52.888 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 14:22:52.889 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 14:22:53.005 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 14:22:53.006 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3407 ms
+2024-07-25 14:22:53.310 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 14:22:53.404 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 14:22:53.467 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 14:22:54.026 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 14:22:54.064 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 14:22:54.576 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13d1f898
+2024-07-25 14:22:54.578 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 14:22:54.645 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 14:22:54.866 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 14:22:56.478 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 14:22:56.826 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 14:22:57.656 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 14:22:58.446 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 14:22:58.448 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 14:22:58.685 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 14:22:59.698 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 14:22:59.710 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 10.849 seconds (process running for 12.71)
+2024-07-25 14:23:14.005 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 14:23:14.005 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 14:23:14.008 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-25 14:23:16.879 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1362 ms
+2024-07-25 14:25:17.195 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 14:25:17.198 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 14:25:17.208 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 17:46:18.939 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 8636 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 17:46:18.942 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 17:46:20.347 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 17:46:20.643 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 284 ms. Found 13 JPA repository interfaces.
+2024-07-25 17:46:21.362 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 17:46:21.376 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 17:46:21.377 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 17:46:21.448 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 17:46:21.449 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2433 ms
+2024-07-25 17:46:21.665 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 17:46:21.737 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 17:46:21.779 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 17:46:22.166 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 17:46:22.201 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 17:46:22.620 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bea7b0
+2024-07-25 17:46:22.622 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 17:46:22.689 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 17:46:22.843 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 17:46:24.256 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 17:46:24.524 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 17:46:25.219 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 17:46:25.903 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 17:46:25.905 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 17:46:26.085 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 17:46:26.955 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 17:46:26.967 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 8.639 seconds (process running for 10.083)
+2024-07-25 17:47:02.413 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 17:47:02.417 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 17:47:02.433 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 17:47:25.193 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 12112 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 17:47:25.197 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 17:47:27.213 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 17:47:27.391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164 ms. Found 13 JPA repository interfaces.
+2024-07-25 17:47:28.114 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 17:47:28.130 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 17:47:28.131 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 17:47:28.202 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 17:47:28.203 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2923 ms
+2024-07-25 17:47:28.390 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 17:47:28.465 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 17:47:28.508 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 17:47:28.896 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 17:47:28.930 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 17:47:29.315 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b5b8730
+2024-07-25 17:47:29.317 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 17:47:29.375 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 17:47:29.532 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 17:47:30.934 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 17:47:31.197 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 17:47:31.923 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 17:47:32.694 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 17:47:32.695 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 17:47:32.926 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 17:47:33.921 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 17:47:33.932 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.402 seconds (process running for 10.898)
+2024-07-25 17:49:58.680 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 17:49:58.681 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 17:49:58.683 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-25 17:50:01.514 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1273 ms
+2024-07-25 18:00:05.161 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:00:05.166 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 18:00:05.182 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 18:00:57.338 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 11380 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 18:00:57.342 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 18:00:59.077 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 18:00:59.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 209 ms. Found 13 JPA repository interfaces.
+2024-07-25 18:01:00.293 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 18:01:00.312 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 18:01:00.313 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 18:01:00.408 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 18:01:00.409 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2992 ms
+2024-07-25 18:01:00.678 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 18:01:00.783 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 18:01:00.841 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 18:01:01.405 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 18:01:01.457 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 18:01:02.018 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@93fb44
+2024-07-25 18:01:02.022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 18:01:02.111 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 18:01:02.343 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 18:01:04.020 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 18:01:04.293 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:01:04.973 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 18:01:05.693 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 18:01:05.695 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 18:01:05.893 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 18:01:06.783 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 18:01:06.795 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 10.068 seconds (process running for 11.515)
+2024-07-25 18:01:41.567 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 18:01:41.568 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 18:01:41.569 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-25 18:01:44.598 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1411 ms
+2024-07-25 18:02:56.273 [http-nio-8075-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-07-25 18:02:56.274 [http-nio-8075-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-07-25 18:03:43.196 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:03:43.199 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 18:03:43.212 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 18:04:03.837 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 9620 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 18:04:03.840 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 18:04:05.233 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 18:04:05.501 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 257 ms. Found 13 JPA repository interfaces.
+2024-07-25 18:04:06.227 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 18:04:06.241 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 18:04:06.242 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 18:04:06.314 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 18:04:06.315 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2399 ms
+2024-07-25 18:04:06.550 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 18:04:06.645 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 18:04:06.685 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 18:04:07.075 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 18:04:07.126 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 18:04:07.525 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13d1f898
+2024-07-25 18:04:07.528 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 18:04:07.588 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 18:04:07.735 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 18:04:09.189 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 18:04:09.469 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:04:10.111 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 18:04:10.788 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 18:04:10.789 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 18:04:10.977 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 18:04:11.877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 18:04:11.891 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 8.66 seconds (process running for 10.299)
+2024-07-25 18:04:40.145 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 18:04:40.145 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 18:04:40.149 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-07-25 18:05:26.183 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:05:26.186 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 18:05:26.193 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 18:11:16.493 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 13424 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 18:11:16.496 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 18:11:17.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 18:11:18.025 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 177 ms. Found 13 JPA repository interfaces.
+2024-07-25 18:11:18.757 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 18:11:18.772 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 18:11:18.773 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 18:11:18.844 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 18:11:18.845 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2280 ms
+2024-07-25 18:11:19.039 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 18:11:19.110 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 18:11:19.151 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 18:11:19.541 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 18:11:19.573 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 18:11:19.974 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d4a0671
+2024-07-25 18:11:19.977 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 18:11:20.039 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 18:11:20.201 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 18:11:21.710 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 18:11:21.978 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:11:22.702 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 18:11:23.528 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 18:11:23.530 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 18:11:23.788 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 18:11:25.103 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 18:11:25.120 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 9.258 seconds (process running for 10.67)
+2024-07-25 18:12:19.487 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 18:12:19.487 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 18:12:19.490 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-25 18:12:22.411 [http-nio-8075-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1324 ms
+2024-07-25 18:30:34.738 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:30:34.741 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 18:30:34.755 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-25 18:41:00.074 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Starting CoffeeShopManagementSystemApplication using Java 21 with PID 2652 (C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem\target\classes started by benza in C:\Users\benza\Desktop\Developer\CoffeeShopManagementSystem)
+2024-07-25 18:41:00.078 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-25 18:41:01.939 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-25 18:41:02.229 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 276 ms. Found 13 JPA repository interfaces.
+2024-07-25 18:41:03.262 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8075 (http)
+2024-07-25 18:41:03.287 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-25 18:41:03.288 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-25 18:41:03.413 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-25 18:41:03.414 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3260 ms
+2024-07-25 18:41:03.691 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-25 18:41:03.803 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-25 18:41:03.876 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-25 18:41:04.484 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-25 18:41:04.525 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-25 18:41:05.143 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d4a0671
+2024-07-25 18:41:05.146 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-25 18:41:05.210 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-25 18:41:05.376 [main] WARN  o.h.boot.model.internal.EntityBinder - HHH000457: Joined inheritance hierarchy [com.example.coffeeshopmanagementsystem.security.entity.User] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-07-25 18:41:07.022 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-25 18:41:07.281 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:41:07.944 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-25 18:41:08.615 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-25 18:41:08.616 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-25 18:41:08.831 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-25 18:41:09.689 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8075 (http) with context path '/'
+2024-07-25 18:41:09.700 [main] INFO  c.e.c.CoffeeShopManagementSystemApplication - Started CoffeeShopManagementSystemApplication in 10.319 seconds (process running for 11.896)
+2024-07-25 18:42:38.189 [http-nio-8075-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-25 18:42:38.190 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-25 18:42:38.192 [http-nio-8075-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-25 18:42:41.125 [http-nio-8075-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1311 ms
+2024-07-25 18:45:31.081 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-25 18:45:31.085 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-25 18:45:31.095 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

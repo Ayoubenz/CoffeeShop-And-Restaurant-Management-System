@@ -38,7 +38,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     private final PasswordEncoder passwordEncoder;
     private final RoleService roleService;
     private final RoleMapper roleMapper;
-    private final EntityManager entityManager;
 
     @Override
     public GetEmployeeDto getEmployeeById(Long id) {
@@ -72,7 +71,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
             //Assigning the role
             Role role = getRoleByPosition(employee.getPosition());
-            role = entityManager.merge(role);
 
             Set<Role> roles = new HashSet<>();
             roles.add(role);
