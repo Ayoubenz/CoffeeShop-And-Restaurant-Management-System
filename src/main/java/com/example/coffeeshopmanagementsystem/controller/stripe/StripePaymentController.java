@@ -16,7 +16,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/payment")
 @RequiredArgsConstructor
-public class PaymentController {
+public class StripePaymentController {
 
     private final StripeService stripeService;
 

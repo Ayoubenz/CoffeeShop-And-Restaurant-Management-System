@@ -88,6 +88,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!--Stripe dependency-->
+        <dependency>
+            <groupId>com.stripe</groupId>
+            <artifactId>stripe-java</artifactId>
+            <version>26.4.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

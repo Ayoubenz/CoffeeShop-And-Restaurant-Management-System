@@ -53,4 +53,14 @@ public class PaymentController {
         paymentService.deletePayment(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+    @GetMapping("/success")
+    public ResponseEntity<String> paymentSuccess() {
+        return ResponseEntity.ok("Payment successful! Thank you for your purchase.");
+    }
+
+    @GetMapping("/cancel")
+    public ResponseEntity<String> paymentCancelled() {
+        return ResponseEntity.ok("Payment was cancelled. Please try again.");
+    }
 }

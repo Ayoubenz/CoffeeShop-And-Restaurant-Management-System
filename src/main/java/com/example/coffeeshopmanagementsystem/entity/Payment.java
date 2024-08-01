@@ -24,6 +24,7 @@ public class Payment {
     private PaymentStatus paymentStatus;
     @Enumerated(EnumType.STRING)
     private PaymentMethod paymentMethod;
+    private String stripePaymentIntentId;
 
     @ManyToOne
     @JoinColumn(name = "order_id")

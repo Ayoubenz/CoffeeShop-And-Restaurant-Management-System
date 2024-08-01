@@ -5,10 +5,15 @@ import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderPlacementDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderItemDto;
 import com.example.coffeeshopmanagementsystem.entity.*;
 import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
+import com.example.coffeeshopmanagementsystem.entity.enums.PaymentMethod;
 import com.example.coffeeshopmanagementsystem.entity.enums.PaymentStatus;
 import com.example.coffeeshopmanagementsystem.mapper.OrderMapper;
 import com.example.coffeeshopmanagementsystem.repository.*;
 import com.example.coffeeshopmanagementsystem.service.facade.OrderService;
+import com.example.coffeeshopmanagementsystem.service.stripe.StripeService;
+import com.stripe.exception.StripeException;
+import com.stripe.model.PaymentIntent;
+import com.stripe.model.checkout.Session;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -28,15 +33,16 @@ public class OrderServiceImpl implements OrderService {
     private final PaymentRepository paymentRepository;
     private final ProductRepository productRepository;
     private final OrderMapper orderMapper;
+    private final StripeService stripeService;
 
+
+    //In application order by an employee
     @Override
     @Transactional
     public GetOrderDto placeOrderInShop(OrderPlacementDto orderPlacementDto){
 
-        //Check if the customer exists
-        Customer customer = customerRepository
-                .findById(orderPlacementDto.getCustomerId())
-                .orElseThrow(() -> new EntityNotFoundException("No customer found"));
+        // Check if the customer exists
+        Customer customer = findCustomerById(orderPlacementDto.getCustomerId());
 
         Order order = new Order();
         order.setCustomer(customer);
@@ -84,7 +90,65 @@ public class OrderServiceImpl implements OrderService {
         return orderMapper.toGetDto(savedOrder);
     }
 
-    //Crud operations
+    //Online ordering by customers + online payment with Stripe
+    @Override
+    @Transactional
+    public GetOrderDto placeOrderOnline(OrderPlacementDto orderPlacementDto) throws StripeException {
+        // Check if the customer exists
+        Customer customer = findCustomerById(orderPlacementDto.getCustomerId());
+
+        Order order = new Order();
+        order.setCustomer(customer);
+        order.setOrderDate(LocalDateTime.now());
+        order.setStatus(OrderStatus.PLACED);
+
+        Set<OrderItem> orderItems = new HashSet<>();
+        double totalPrice = 0.0;
+
+        for (OrderItemDto orderItemDto : orderPlacementDto.getOrderItems()) {
+            Product product = productRepository.findById(orderItemDto.getProductId())
+                    .orElseThrow(() -> new EntityNotFoundException("Product not found"));
+
+            OrderItem orderItem = new OrderItem();
+            orderItem.setOrder(order);
+            orderItem.setProduct(product);
+            orderItem.setQuantity(orderItemDto.getQuantity());
+            orderItem.setOrderedPrice(orderItemDto.getOrderedPrice() != null ? orderItemDto.getOrderedPrice() : product.getPrice());
+            orderItems.add(orderItem);
+            totalPrice += orderItem.getQuantity() * orderItem.getOrderedPrice();
+        }
+
+        order.setOrderItems(orderItems);
+        order.setTotalPrice(totalPrice);
+
+        // Save order
+        Order savedOrder = orderRepository.save(order);
+
+        // Save order items
+        orderItemRepository.saveAll(orderItems);
+
+        // Create Checkout Session using Stripe
+        Session session = stripeService.createCheckoutSession(totalPrice);
+
+
+        // Create and save payments using Stripe
+        PaymentIntent paymentIntent = stripeService.createPaymentIntent(totalPrice);
+        Payment payment = new Payment();
+        payment.setAmount(totalPrice);
+        payment.setOrder(savedOrder);
+        payment.setPaymentStatus(PaymentStatus.PENDING);
+        payment.setPaymentMethod(PaymentMethod.CREDIT_CARD);
+        payment.setOrderDateAndTime(LocalDateTime.now());
+        payment.setStripePaymentIntentId(paymentIntent.getId());
+        Payment savedPayment = paymentRepository.save(payment);
+
+        savedOrder.setPayments(Set.of(savedPayment));
+
+        return orderMapper.toGetDto(savedOrder);
+    }
+
+
+        //Crud operations
     @Override
     public GetOrderDto getOrderById(Long id){
         return orderRepository
@@ -139,5 +203,12 @@ public class OrderServiceImpl implements OrderService {
             throw new EntityNotFoundException("Order you want to delete doesn't exist");
         }
         orderRepository.deleteById(id);
+    }
+
+    //Utility method - Checking if a customer exists
+    private Customer findCustomerById(Long id){
+        return customerRepository
+                .findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("No customer found"));
     }
 }

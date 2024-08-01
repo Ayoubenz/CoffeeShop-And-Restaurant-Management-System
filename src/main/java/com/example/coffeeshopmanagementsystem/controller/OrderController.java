@@ -4,6 +4,7 @@ import com.example.coffeeshopmanagementsystem.dto.OrderDto.GetOrderDto;
 import com.example.coffeeshopmanagementsystem.dto.OrderDto.OrderPlacementDto;
 import com.example.coffeeshopmanagementsystem.entity.enums.OrderStatus;
 import com.example.coffeeshopmanagementsystem.service.facade.OrderService;
+import com.stripe.exception.StripeException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,13 @@ public class OrderController {
         GetOrderDto placedOrder = orderService.placeOrderInShop(orderPlacementDto);
         return new ResponseEntity<>(placedOrder, HttpStatus.CREATED);
     }
+
+    @PostMapping("/pay-online")
+    public ResponseEntity<GetOrderDto> placeOrderOnline(@RequestBody OrderPlacementDto orderPlacementDto) throws StripeException {
+        GetOrderDto order = orderService.placeOrderOnline(orderPlacementDto);
+        return new ResponseEntity<>(order, HttpStatus.CREATED);
+    }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<GetOrderDto> getOrderById(@PathVariable Long id){

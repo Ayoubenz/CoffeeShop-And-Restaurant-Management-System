@@ -29,6 +29,12 @@ public class UserController {
         return ResponseEntity.ok(user);
     }
 
+    @GetMapping("/all")
+    public ResponseEntity<List<GetUserDto>> getAllUsers(){
+        List<GetUserDto> users = userService.findAllUsers();
+        return ResponseEntity.ok(users);
+    }
+
     @PostMapping("/")
     public ResponseEntity<CreatUserDto> saveUser(@RequestBody CreatUserDto creatUserDto) {
         CreatUserDto savedUser = userService.saveUser(creatUserDto);

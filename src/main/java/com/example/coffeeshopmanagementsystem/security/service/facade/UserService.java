@@ -11,6 +11,8 @@ public interface UserService {
 
     GetUserDto findUserByUsername(String username);
 
+    List<GetUserDto> findAllUsers();
+
     CreatUserDto saveUser(CreatUserDto creatUserDto);
 
     List<CreatUserDto> saveAll(List<CreatUserDto> creatUserDtoList);

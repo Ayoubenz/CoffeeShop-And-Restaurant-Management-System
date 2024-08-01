@@ -43,6 +43,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<GetUserDto> findAllUsers(){
+        return userRepository
+                .findAll()
+                .stream()
+                .map(userMapper::toGetDto)
+                .toList();
+    }
+
+    @Override
     public CreatUserDto saveUser(CreatUserDto creatUserDto)
     {
         try {

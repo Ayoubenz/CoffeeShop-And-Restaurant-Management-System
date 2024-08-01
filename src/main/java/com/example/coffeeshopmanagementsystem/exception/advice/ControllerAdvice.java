@@ -4,8 +4,10 @@ import com.example.coffeeshopmanagementsystem.exception.DataIntegrityException;
 import com.example.coffeeshopmanagementsystem.exception.ErrorMessage;
 import com.example.coffeeshopmanagementsystem.exception.entities.ServiceException;
 import com.example.coffeeshopmanagementsystem.security.exception.TokenRefreshException;
+import com.stripe.exception.StripeException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -14,7 +16,7 @@ import org.springframework.web.context.request.WebRequest;
 import java.util.Date;
 
 @RestControllerAdvice
-public class TokenControllerAdvice {
+public class ControllerAdvice {
     @ExceptionHandler(value = TokenRefreshException.class)
     @ResponseStatus(HttpStatus.FORBIDDEN)
     public ErrorMessage handleTokenRefreshException(TokenRefreshException ex, WebRequest request) {
@@ -54,5 +56,16 @@ public class TokenControllerAdvice {
                 ex.getMessage(),
                 request.getDescription(false));
     }
+
+    @ExceptionHandler(StripeException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ErrorMessage handleStripeException(StripeException ex, WebRequest request) {
+        return new ErrorMessage(
+                HttpStatus.BAD_REQUEST.value(),
+                new Date(),
+                "Stripe error "+ex.getMessage(),
+                request.getDescription(false));
+    }
+
 
 }
