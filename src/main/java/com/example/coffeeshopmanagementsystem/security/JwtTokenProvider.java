@@ -1,5 +1,6 @@
 package com.example.coffeeshopmanagementsystem.security;
 
+import com.example.coffeeshopmanagementsystem.security.exception.TokenExpiredException;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -26,8 +27,13 @@ public class JwtTokenProvider {
     private int jwtExpirationMs;
 
     public String extractUsername (String jwtToken)
-    {
+    {   try {
         return extractClaim(jwtToken, Claims::getSubject);
+        }catch (ExpiredJwtException e) {
+        // Handle token expiration, e.g., throw a custom exception or refresh the token
+        throw new TokenExpiredException("Token has expired. Please login again.");
+    }
+
     }
     public String generateToken(UserDetails userDetails){
         return generateToken(new HashMap<>(),userDetails);
